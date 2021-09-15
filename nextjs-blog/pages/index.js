@@ -7,6 +7,7 @@ import Logo from '../public/images/SlsLogo.jpg';
 import MissionLogo1 from '../public/images/missionLogo1.png';
 import MissionLogo2 from '../public/images/missionLogo2.png';
 import MissionLogo3 from '../public/images/missionLogo3.png';
+import HandImg from '../public/images/hand-img.png';
 
 export default function Home() {
   return (
@@ -56,16 +57,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='join-us'>
-          <h1 className="mission-title">Join Us</h1>
-          <p className="mission-text">
-          We are looking for dedicated and passionate people
-          who want to make a difference by improving the detection,
-          treatment and prevention of domestic violence.
-
-          If you would like to help us achieve our mission or have other
-          inquiries with our team, please email us at edie@safelivingspace.org
-          </p>
+        <div className='join-us-container'>
+          <div className='join-us-words-container'>
+            <h1 className='join-us-title'>Join Us</h1>
+            <p className='join-us-text'>
+            We are looking for dedicated and passionate people
+            who want to make a difference by improving the detection,
+            treatment and prevention of domestic violence.
+            </p>
+            <p className='join-us-text'>
+            If you would like to help us achieve our mission or have other
+            inquiries with our team, please email us at <b>edie@safelivingspace.org</b>
+            </p>
+          </div>
+          <Image width="800px" height="800px" src={HandImg}></Image>
         </div>
       </main>
 
@@ -79,11 +84,30 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        .join-us-words-container {
+          margin: 0 4% 0 4%;
+        }
+        .join-us-text {
+          font-size: 20px;
+          color: #333333;
+        }
+        .join-us-container {
+          margin: 0 0 0 2%;
+          display: flex;
+          align-items: center;
+          width: 90%;
+          color: #333333;
+        }
+        .join-us-title {
+          padding-top: 10px;
+          font-size: 50px;
+        }
         .banner-logo {
           display: flex;
           align-items: center;
         }
         .donate-button {
+          border-radius: 16px;
           background-color: #573494;
           border: none;
           color: white;
