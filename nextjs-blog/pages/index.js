@@ -1,8 +1,12 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import NavBar from '../components/NavBar'
-import Logo from '../public/images/SlsLogo.jpg'
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import NavBar from '../components/NavBar';
+import Carousel from '../components/Carousel';
+import Logo from '../public/images/SlsLogo.jpg';
+import MissionLogo1 from '../public/images/missionLogo1.png';
+import MissionLogo2 from '../public/images/missionLogo2.png';
+import MissionLogo3 from '../public/images/missionLogo3.png';
 
 export default function Home() {
   return (
@@ -12,50 +16,56 @@ export default function Home() {
         <link rel="icon" href="/images/SlsLogo.jpg" />
       </Head>
       <div className="banner">
-        <h1><Image width="40px" height="40px" src={Logo}></Image>  Safe Living Space</h1>
+        <div className='banner-logo'>
+          <Image width="40px" height="40px" src={Logo}></Image>
+          <h1 className='bannerText'> Safe Living Space</h1>
         </div>
+        <a className='donate-button' href="https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ">Donate</a>
+      </div>
       { NavBar()}
       <div className="header-spacer"/>
       <main>
-        <h1 className="title">
-          Read{' '}
-          <Link href="/who-we-are">
-            <a>this page!</a>
-          </Link>
-        </h1>
+        {Carousel()}
+        <h3 className="tagline">Everyone Deserves To Feel Safe Where They Live</h3>
+        <div className="mission-background">
+          <div className="mission-container">
+            <h1 className="mission-title">Our Mission</h1>
+            <div className="mission-box-container">
+              <div className="mission-box"> 
+              <Image width="80px" height="80px" src={MissionLogo1}></Image>
+                <h3 className="mission-header"> Resources </h3>
+                <p className="mission-text">Providing innovative training for first
+                  responders and state of the art educational
+                  resources to victims of domestic violence</p>
+              </div>
+              <div className="mission-box"> 
+              <Image width="80px" height="80px" src={MissionLogo2}></Image>
+                <h3 className="mission-header"> Community </h3>
+                <p className="mission-text">
+                Uniting healthcare workers, policy makers,
+                victims and the general public against domestic
+                violence
+                </p>
+              </div>
+              <div className="mission-box">
+              <Image width="80px" height="80px" src={MissionLogo3}></Image>
+                <h3 className="mission-header"> Advocacy </h3>
+                <p className="mission-text">Pushing for systemic reform in the detection,
+                  prevention and treatment of domestic violence</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='join-us'>
+          <h1 className="mission-title">Join Us</h1>
+          <p className="mission-text">
+          We are looking for dedicated and passionate people
+          who want to make a difference by improving the detection,
+          treatment and prevention of domestic violence.
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          If you would like to help us achieve our mission or have other
+          inquiries with our team, please email us at edie@safelivingspace.org
+          </p>
         </div>
       </main>
 
@@ -65,20 +75,85 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
       <style jsx>{`
+        .banner-logo {
+          display: flex;
+          align-items: center;
+        }
+        .donate-button {
+          background-color: #573494;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin-right 100px;
+        }
+
+        .donate-button:hover {
+          background-color: #973494;
+        }
+        .mission-text {
+          font-size: 24px;
+        }
+        .mission-header {
+          font-style: italic;
+          font-size: 40px;
+        }
+        .mission-title {
+          color #222222;
+          font-size: 70px;
+          margin-top: 20px;
+        }
+        .mission-background {
+          margin-top: 40px;
+          background-color: #E5F2E9;
+          width: 100%;
+          display: felx;
+          justify-content: center;
+        }
+        .mission-box {
+          padding: 0 10px 0 10px;
+          width 33.33%;
+          height: 100%;
+        }
+        .mission-box-container {
+          color #222222;
+          width 100%;
+          height: 400px;
+          display: flex;
+          align-items: center;
+        }
+        .mission-container {
+          text-align: center;
+          color: #573494;
+          width: 90%;
+        }
+        .tagline {
+          color: #573494;
+          font-size: 32px;
+          padding-top: 30px
+        }
         .slsLogo {
           height: 10px;
           width: 10px;
         }
         .banner {
-          padding: 5px 0 0 10px;
+          padding: 15px 0 0 20px;
           width: 100%;
-          float: left;
+          display:flex;
+          align-items:center;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .bannerText {
+          margin: 5px 0 0 10px;
           color: #573494
         }
 
@@ -98,7 +173,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding-top: 20px;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -128,28 +203,6 @@ export default function Home() {
         a {
           color: inherit;
           text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
         }
 
         .description {
