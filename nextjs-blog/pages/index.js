@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Carousel from '../components/Carousel';
 import Banner from '../components/Banner';
+import Footer from '../components/Footer';
 import MissionLogo1 from '../public/images/missionLogo1.png';
 import MissionLogo2 from '../public/images/missionLogo2.png';
 import MissionLogo3 from '../public/images/missionLogo3.png';
@@ -17,31 +18,40 @@ export default function Home() {
       <div className="bannerWrapper">{Banner()}</div>
       <main>
         {Carousel()}
-        <h3 className="tagline">Everyone Deserves To Feel Safe Where They Live</h3>
-        <div className="mission-background">
-          <div className="mission-container">
-            <h1 className="mission-title">Our Mission</h1>
-            <div className="mission-box-container">
-              <div className="mission-box"> 
+        <h3 className="mission-title">Our Mission</h3>
+        <p className="mission-text">Because everyone deserves to be safe where they live,
+          <br></br>
+          <br></br>
+          Safe Living Space serves as the agent to coordinate multiple
+          stakeholders who are healthcare, safety, and subject matter experts.
+          These dynamic and diverse individuals team together to provide YOU 
+          education, information, research, and data to identify, treat, and
+          prevent traumatic brain injury and concussion secondary to the experience
+          of domestic, intimate partner, and family violence</p>
+        <div className="work-background">
+          <div className="work-container">
+            <h1 className="work-title">Our Work</h1>
+            <div className="work-box-container">
+              <div className="work-box"> 
               <Image width="80px" height="80px" src={MissionLogo1}></Image>
-                <h3 className="mission-header"> Resources </h3>
-                <p className="mission-text">Providing innovative training for first
+                <h3 className="work-header"> Resources </h3>
+                <p className="work-text">Providing innovative training for first
                   responders and state of the art educational
                   resources to victims of domestic violence</p>
               </div>
-              <div className="mission-box"> 
+              <div className="work-box"> 
               <Image width="80px" height="80px" src={MissionLogo2}></Image>
-                <h3 className="mission-header"> Community </h3>
-                <p className="mission-text">
+                <h3 className="work-header"> Community </h3>
+                <p className="work-text">
                 Uniting healthcare workers, policy makers,
                 victims and the general public against domestic
                 violence
                 </p>
               </div>
-              <div className="mission-box">
+              <div className="work-box">
               <Image width="80px" height="80px" src={MissionLogo3}></Image>
-                <h3 className="mission-header"> Advocacy </h3>
-                <p className="mission-text">Pushing for systemic reform in the detection,
+                <h3 className="work-header"> Advocacy </h3>
+                <p className="work-text">Pushing for systemic reform in the detection,
                   prevention and treatment of domestic violence</p>
               </div>
             </div>
@@ -63,14 +73,8 @@ export default function Home() {
           <Image width="800px" height="800px" src={HandImg}></Image>
         </div>
       </main>
-
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+        {Footer()}
       </footer>
 
       <style jsx>{`
@@ -97,49 +101,53 @@ export default function Home() {
           font-size: 50px;
         }
 
-        .donate-button:hover {
-          background-color: #973494;
-        }
-        .mission-text {
+        .work-text {
+          font-weight: 400;
           font-size: 24px;
         }
-        .mission-header {
+        .work-header {
           font-style: italic;
           font-size: 40px;
         }
-        .mission-title {
-          color #222222;
+        .work-title {
           font-size: 70px;
           margin-top: 20px;
         }
-        .mission-background {
+        .work-background {
           margin-top: 40px;
-          background-color: #E5F2E9;
+          background-image: linear-gradient(to bottom right, #573494, #973494);
           width: 100%;
           display: felx;
           justify-content: center;
         }
-        .mission-box {
+        .work-box {
           padding: 0 10px 0 10px;
           width 33.33%;
           height: 100%;
         }
-        .mission-box-container {
-          color #222222;
+        .work-box-container {
           width 100%;
           height: 400px;
           display: flex;
           align-items: center;
         }
-        .mission-container {
+        .work-container {
           text-align: center;
-          color: #573494;
+          color: white;
           width: 90%;
         }
-        .tagline {
+        .mission-title {
+          margin: 20px 0 0 0;
           color: #573494;
-          font-size: 32px;
-          padding-top: 30px
+          font-size: 52px;
+        }
+        .mission-text {
+          width: 60%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          color: #573494;
+          font-size: 21px;
         }
         .slsLogo {
           height: 10px;
@@ -173,21 +181,6 @@ export default function Home() {
 
         footer {
           width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
         }
 
         a {
