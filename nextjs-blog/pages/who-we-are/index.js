@@ -7,8 +7,9 @@ export default function WhoWeAre() {
         <Layout>
             <Head>
                 <title>Who We Are</title>
+                <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
-            <h1>Board of Directors</h1>
+            <h1 className='bannerText'> Safe Living Space</h1>
             <h3>Edie Zusman, MD, MBA   CEO and Executive Director</h3>
             <h3>Judy Robinson   Secretary</h3>
             Read{' '}
@@ -18,6 +19,27 @@ export default function WhoWeAre() {
             <Link href="/">
                 <a> Back Home</a>
             </Link>
+            <style jsx> {`
+                .bannerText {
+                    color: #573494
+                }
+            `}
+            </style>
+
+            <style jsx global>{`
+                html,
+                body {
+                padding: 0;
+                margin: 0;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+                    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+                    sans-serif;
+                }
+
+                * {
+                box-sizing: border-box;
+                }
+            `}</style>
         </Layout>
     )
 }

@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
-import NavBar from '../components/NavBar';
 import Carousel from '../components/Carousel';
-import Logo from '../public/images/SlsLogo.jpg';
+import Banner from '../components/Banner';
 import MissionLogo1 from '../public/images/missionLogo1.png';
 import MissionLogo2 from '../public/images/missionLogo2.png';
 import MissionLogo3 from '../public/images/missionLogo3.png';
@@ -16,15 +14,7 @@ export default function Home() {
         <title>Safe Living Space</title>
         <link rel="icon" href="/images/SlsLogo.jpg" />
       </Head>
-      <div className="banner">
-        <div className='banner-logo'>
-          <Image width="40px" height="40px" src={Logo}></Image>
-          <h1 className='bannerText'> Safe Living Space</h1>
-        </div>
-        <a className='donate-button' href="https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ">Donate</a>
-      </div>
-      { NavBar()}
-      <div className="header-spacer"/>
+      <div className="bannerWrapper">{Banner()}</div>
       <main>
         {Carousel()}
         <h3 className="tagline">Everyone Deserves To Feel Safe Where They Live</h3>
@@ -84,6 +74,10 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        .bannerWrapper {
+          margin-top: 10px;
+          width: 100%;
+        }
         .join-us-words-container {
           margin: 0 4% 0 4%;
         }
@@ -101,22 +95,6 @@ export default function Home() {
         .join-us-title {
           padding-top: 10px;
           font-size: 50px;
-        }
-        .banner-logo {
-          display: flex;
-          align-items: center;
-        }
-        .donate-button {
-          border-radius: 16px;
-          background-color: #573494;
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin-right 100px;
         }
 
         .donate-button:hover {
@@ -176,24 +154,12 @@ export default function Home() {
           justify-content: space-between;
         }
 
-        .bannerText {
-          margin: 5px 0 0 10px;
-          color: #573494
-        }
-
         .container {
           min-height: 100vh;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-
-        .header-spacer {
-          margin-top: 10px;
-          width: 100%;
-          height: 10px;
-          background-color: #573494;
         }
 
         main {
@@ -232,15 +198,6 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
