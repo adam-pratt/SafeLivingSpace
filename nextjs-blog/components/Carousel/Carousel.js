@@ -5,9 +5,9 @@ export default function Carousel() {
     return(
       <div className="carouselContainer">
         {/* <div className="carouselBoxTransparent"><img src={getImageByName('boximg1.jpg')} height={boxSize} width={boxSize}/></div> */}
-        <div className="carouselBox"><img src={getImageByName('boximg2.jpg')} height={boxSize} width={boxSize}/></div>
         <div className="carouselBox"><img src={getImageByName('boximg3.jpg')} height={boxSize} width={boxSize}/></div>
         <div className="carouselBox"><img src={getImageByName('boximg4.jpg')} height={boxSize} width={boxSize}/></div>
+        <div className="carouselBox"><img src={getImageByName('boximg5.jpg')} height={boxSize} width={boxSize}/></div>
         {/* <div className="carouselBoxTransparent"><img src={getImageByName('boximg5.jpg')} height={boxSize} width={boxSize}/></div> */}
         <style jsx> {`
           .carouselBox {
