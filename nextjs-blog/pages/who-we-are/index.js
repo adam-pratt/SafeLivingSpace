@@ -55,13 +55,12 @@ export default function WhoWeAre() {
 
                 .text {
                     margin: 25px 0 0 0;
-                    width: 80%;
                     font-weight: 190;
                     word-spacing: 2px;
                     color: #222222;
                     letter-spacing: 1px;
                     display: flex;
-                    text-align: center;
+                    text-align: left;
                     font-size: 24px;
                 }
 
@@ -74,9 +73,6 @@ export default function WhoWeAre() {
 
                 .section-container {
                     width: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
                     padding-bottom: 20px;
                 }
                 .main-container {
