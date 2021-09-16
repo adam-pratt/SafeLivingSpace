@@ -114,7 +114,7 @@ export default function Home() {
           font-size: 60px;
         }
         .work-background {
-          padding-top: 60px;
+          padding-top: 80px;
           background-image: linear-gradient(to bottom right, #573494, #973494);
           width: 100%;
           display: felx;
@@ -137,7 +137,7 @@ export default function Home() {
           width: 90%;
         }
         .mission-title {
-          margin: 120px 0 0 0;
+          margin: 80px 0 0 0;
           color: #573494;
           font-size: 60px;
         }
@@ -151,7 +151,7 @@ export default function Home() {
           justify-content: center;
           text-align: center;
           font-size: 24px;
-          margin-bottom: 60px;
+          margin-bottom: 80px;
         }
         .slsLogo {
           height: 10px;
