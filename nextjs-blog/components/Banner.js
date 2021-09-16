@@ -1,7 +1,8 @@
 import Image from 'next/Image';
 import Link from 'next/Link';
 import NavBar from './NavBar';
-import Logo from '../public/images/SlsLogo.jpg'
+import DonateButton from './DonateButton';
+import Logo from '../public/images/SlsLogo.jpg';
 
 export default function Banner() {
     return(
@@ -13,12 +14,11 @@ export default function Banner() {
               <h1 className='banner-text'> Safe Living Space</h1>
             </a>
           </Link>
-          <a className='donate-button' href="https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ">Donate</a>
+          {DonateButton()}
         </div>
         <div className='nav-bar-wrapper'>
           { NavBar()}
         </div>
-        <div className="header-spacer"/>
         <style jsx>{`
           a {
             text-decoration: none;
@@ -41,6 +41,12 @@ export default function Banner() {
           .banner-text {
             margin: 5px 0 0 10px;
             color: #573494
+            font-weight: 170;
+            word-spacing: 2px;
+          }
+
+          .banner-text:hover {
+            color: #973494;
           }
 
           .donate-button {
@@ -53,10 +59,6 @@ export default function Banner() {
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-          }
-          
-          .donate-button:hover {
-            box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
           }
 
           .header-spacer {

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Carousel from '../components/Carousel';
+import Carousel from '../components/Carousel/Carousel';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import MissionLogo1 from '../public/images/missionLogo1.png';
@@ -20,8 +20,6 @@ export default function Home() {
         {Carousel()}
         <h3 className="mission-title">Our Mission</h3>
         <p className="mission-text">Because everyone deserves to be safe where they live,
-          <br></br>
-          <br></br>
           Safe Living Space serves as the agent to coordinate multiple
           stakeholders who are healthcare, safety, and subject matter experts.
           These dynamic and diverse individuals team together to provide YOU 
@@ -70,7 +68,7 @@ export default function Home() {
             inquiries with our team, please email us at <b>edie@safelivingspace.org</b>
             </p>
           </div>
-          <Image width="800px" height="800px" src={HandImg}></Image>
+          <Image width="1000px" height="800px" src={HandImg}></Image>
         </div>
       </main>
       <footer>
@@ -79,21 +77,24 @@ export default function Home() {
 
       <style jsx>{`
         .bannerWrapper {
-          margin-top: 10px;
           width: 100%;
+          padding: 10px 0 10px 0;
         }
         .join-us-words-container {
           margin: 0 4% 0 4%;
         }
         .join-us-text {
-          font-size: 20px;
+          font-weight: 190;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+          font-size: 24px;
           color: #333333;
         }
         .join-us-container {
           margin: 0 0 0 2%;
           display: flex;
           align-items: center;
-          width: 90%;
+          width: 92%;
           color: #333333;
         }
         .join-us-title {
@@ -102,7 +103,10 @@ export default function Home() {
         }
 
         .work-text {
-          font-weight: 400;
+          font-weight: 190;
+          word-spacing: 2px;
+          color: white;
+          letter-spacing: 1px;
           font-size: 24px;
         }
         .work-header {
@@ -110,7 +114,7 @@ export default function Home() {
           font-size: 40px;
         }
         .work-title {
-          font-size: 70px;
+          font-size: 60px;
           margin-top: 20px;
         }
         .work-background {
@@ -139,15 +143,18 @@ export default function Home() {
         .mission-title {
           margin: 20px 0 0 0;
           color: #573494;
-          font-size: 52px;
+          font-size: 60px;
         }
         .mission-text {
-          width: 60%;
+          width: 80%;
+          font-weight: 190;
+          word-spacing: 2px;
+          color: #222222;
+          letter-spacing: 1px;
           display: flex;
           justify-content: center;
           text-align: center;
-          color: #573494;
-          font-size: 21px;
+          font-size: 24px;
         }
         .slsLogo {
           height: 10px;
@@ -171,7 +178,6 @@ export default function Home() {
         }
 
         main {
-          padding-top: 20px;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -201,47 +207,6 @@ export default function Home() {
 
           max-width: 800px;
           margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
         }
       `}</style>
 

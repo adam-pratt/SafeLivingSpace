@@ -1,75 +1,82 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import Banner from '../../components/Banner';
+import Footer from '../../components/Footer';
 
 export default function WhoWeAre() {
     return (
-        <div>
+        <div className='who-we-are-container'>
             <Head>
                 <title>What We Do</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
             <div className="banner-wrapper">{Banner()}</div>
-            <div className="main-container">
-                <div className='section-container'>
-                    <h1>Board of Directors</h1>
-                    <h3>Edie Zusman, MD, MBA   CEO and Executive Director</h3>
-                    <h3>Judy Robinson   Secretary</h3>
-                    <h3>Catherine Ndungo-Case   Treasurer</h3>
-                    <h3>Adam Pratt   Director at Large</h3>
-                    <h3>Stacie G. Buchanan   Director at Large</h3>
-                </div>
-                <div className='section-container'>
-                    <h1>Advisory Board</h1>
-                    <h3>Jahmal Miller, MHA</h3>
-                    <h3>Katie Kaffka, Medical Social Work</h3>
-                    <h3>Joshua Kuluva,  Neurology and Psychiatry</h3>
-                    <h3>Nanci Tucker,  Pediatrics and Board of Casa De Las Madres</h3>
-                    <h3>Rebecca Henrickson, RN</h3>
-                    <h3>Kasey Holbert, Veterinary Student</h3>
-                    <h3>Jonathan Karpa, Law Enforcement</h3>
-                    <h3>Gretchen Hess, Speech and Cognitive Therapy</h3>
-                    <h3>Saint-Aaron Morris, Military Neurosurgeon USAF</h3>
-                    <h3>Andrew Reisner, Pediatric TBI Expert</h3>
-                    <h3>Rachel Plouse, TBI Research</h3>
-                    <h3>Elliott Block, Physical Medicine and Rehabilitation</h3>
-                    <h3>Jordan Glassman,  Equestrian, Medical Student</h3>
-                    <h3>Jessica Almgren-Bell, Premed</h3>
-                    <h3>Yuriy Vinokur, Medical Director Primary Care, Tribal Health System</h3>
-                    <h3>Heather Theaux, RN, MS, TCRN, Director Emergency Services/Trauma Program NorthBay Healthcare</h3>
-                    <h3>Jane A. Petro, MD</h3>
-                    <h3>Loc Nguyen, MD, Internal Medicine Central Valley</h3>
-                </div>
-                <Link href="/">
-                    <a> Back Home</a>
-                </Link>
+            <div className="banner-spacer"/>
+            <h1 className='title'>
+                What We Do
+            </h1>
+            <divv className="text">
+                Because everyone deserves to be safe where they live,
+                Safe Living Space serves as the agent to coordinate multiple
+                stakeholders who are healthcare, safety, and subject matter experts.
+                These dynamic and diverse individuals team together to provide YOU 
+                education, information, research, and data to identify, treat, and
+                prevent traumatic brain injury and concussion secondary to the experience
+                of domestic, intimate partner, and family violence
+            </divv>
+            <h1 className='title'>
+                Projects
+            </h1>
+            <h3 className="text">Vignette of Concussion Self-Screening Tool</h3>
+            <div>
+                We’re developing novel tools dedicated to screening for concussion secondary to domestic, intimate partner, and family violence.
             </div>
+            <b>Learn more under Concussion Toolkit</b>
+            <h3 className="text"> First Responders Tool</h3>
+            <div>
+                TODO
+            </div>
+            <footer>
+                {Footer()}
+            </footer>
             <style jsx> {`
-                h1 {
-                    color: #573494;
-                    text-decoration: underline;
-                }
-
-                h3 {
-                    color: #444444;
-                }
-
-                .section-container {
-                    width: 50%;
+                .who-we-are-container {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    padding-bottom: 20px;
-                }
-                .main-container {
                     align-items: center;
-                    width 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
                 }
                 .banner-wrapper {
-                    margin-top: 10px;
+                    width: 100%;
+                    padding: 10px 0 10px 0;
+                }
+
+                .banner-spacer {
+                    width: 100%;
+                    height: 10px;
+                    background-image: linear-gradient(to bottom right, #573494, #973494);
+                }
+
+                .title {
+                    display: felx;
+                    justify-content: center;
+                    margin: 30px 0 30px 0;
+                    color: #573494;
+                    font-size: 60px;
+                }
+
+                .text {
+                    width: 80%;
+                    font-weight: 190;
+                    word-spacing: 2px;
+                    color: #222222;
+                    letter-spacing: 1px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 24px;
+                }
+
+                footer {
                     width: 100%;
                 }
             `}
