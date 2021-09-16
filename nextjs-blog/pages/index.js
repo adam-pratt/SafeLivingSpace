@@ -72,6 +72,10 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        .container {
+          overflow-x: hidden;
+        }
+
         .bannerWrapper {
           width: 100%;
           padding: 10px 0 10px 0;
