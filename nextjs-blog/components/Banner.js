@@ -2,6 +2,7 @@ import { getImageByName } from '../utils/imgLoader';
 import Link from 'next/Link';
 import NavBar from './NavBar';
 import DonateButton from './DonateButton';
+import HambergerMenu from './HambMenu';
 
 export default function Banner() {
     return(
@@ -13,20 +14,28 @@ export default function Banner() {
               <h1 className='banner-text'> Safe Living Space</h1>
             </a>
           </Link>
-          <div className='nav-bar-wrapper'>
-            { NavBar()}
-          </div>
-          {DonateButton()}
+          { NavBar()}
+          <div className='donate-button-wrapper'>{DonateButton()}</div>
+          <div className="mobile-menu">{HambergerMenu()}</div>
         </div>
         <style jsx>{`
+          @media only screen and (min-width: 1400px) {
+            .mobile-menu {
+              display: none;
+            }
+          }
+
+          @media only screen and (max-width: 1400px) {
+            .donate-button-wrapper {
+              display: none;
+            }
+          }
+
+         
+
+          
           a {
             text-decoration: none;
-          }
-          .nav-bar-wrapper {
-            margin-right: 200px;
-            padding-top: 8px;
-            justify-content: center;
-            display: flex;
           }
           .banner {
             margin: 0 2.5% 0 2.5%;
@@ -37,6 +46,7 @@ export default function Banner() {
             align-items: center;
           }
           .banner-logo {
+            margin-top: auto;
             display: flex;
             align-items: center;
           }
