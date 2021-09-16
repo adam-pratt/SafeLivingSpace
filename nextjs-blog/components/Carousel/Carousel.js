@@ -29,6 +29,7 @@ export default function Carousel() {
 
           .carouselContainer {
             width: 250%;
+            overflow-x: hidden;
             padding: 40px 0 40px 0;
             background-image: linear-gradient(to bottom right, #573494, #973494);
             display: flex;

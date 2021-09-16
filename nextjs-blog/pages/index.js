@@ -98,8 +98,8 @@ export default function Home() {
           color: #333333;
         }
         .join-us-title {
-          padding-top: 10px;
-          font-size: 50px;
+          color: #573494;
+          font-size: 60px;
         }
 
         .work-text {
@@ -114,11 +114,11 @@ export default function Home() {
           font-size: 40px;
         }
         .work-title {
+          margin: 0 0 24px 0;
           font-size: 60px;
-          margin-top: 20px;
         }
         .work-background {
-          margin-top: 40px;
+          padding-top: 60px;
           background-image: linear-gradient(to bottom right, #573494, #973494);
           width: 100%;
           display: felx;
@@ -141,7 +141,7 @@ export default function Home() {
           width: 90%;
         }
         .mission-title {
-          margin: 20px 0 0 0;
+          margin: 120px 0 0 0;
           color: #573494;
           font-size: 60px;
         }
@@ -155,6 +155,7 @@ export default function Home() {
           justify-content: center;
           text-align: center;
           font-size: 24px;
+          margin-bottom: 60px;
         }
         .slsLogo {
           height: 10px;
