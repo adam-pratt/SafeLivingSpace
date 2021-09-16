@@ -6,7 +6,7 @@ export default function GetInvolved() {
     return (
         <div className='get-involved-container'>
             <Head>
-                <title>Concussion Screening Tool</title>
+                <title>Concussion Screening ToolS</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
             <div className="banner-wrapper">
@@ -14,9 +14,13 @@ export default function GetInvolved() {
             </div>
             <div className="banner-spacer"/>
             <h1 className='title'>
-                Concussion Screening Tool
+                Concussion Screening Tools
             </h1>
             <img width="80%" height="80%" src={getImageByName('concussion-screening-tools.png')}></img>
+            <br/>
+            <br/>
+            <br/>
+            <img width="80%" height="80%" src={getImageByName('return-to-play-guide.png')}></img>
             <footer>
                 {Footer()}
             </footer>
