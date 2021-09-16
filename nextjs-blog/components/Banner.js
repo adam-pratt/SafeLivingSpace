@@ -1,8 +1,7 @@
-import Image from 'next/Image';
+import { getImageByName } from '../utils/imgLoader';
 import Link from 'next/Link';
 import NavBar from './NavBar';
 import DonateButton from './DonateButton';
-import Logo from '../public/images/SlsLogo.jpg';
 
 export default function Banner() {
     return(
@@ -10,7 +9,7 @@ export default function Banner() {
         <div className="banner">
           <Link href='/'>
             <a className='banner-logo'>
-              <Image width="40px" height="40px" src={Logo}></Image>
+              <img width="40px" height="40px" src={getImageByName('SlsLogo.jpg')}></img>
               <h1 className='banner-text'> Safe Living Space</h1>
             </a>
           </Link>

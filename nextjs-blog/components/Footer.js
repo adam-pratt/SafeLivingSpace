@@ -1,16 +1,13 @@
-import Image from 'next/Image';
-import LinkedLogo from '../public/images/linkedin-white.png'
-import FacebookLogo from '../public/images/facebook-white.png'
-import InstaLogo from '../public/images/insta-white.png'
+import { getImageByName } from '../utils/imgLoader';
 
 export default function Footer() {
     return(
       <div>
         <div className="footer-container">
           <div className='socail-container'>
-            <a href="https://www.instagram.com/safelivingspace/?hl=en"><Image height='40px' width='40px' src={LinkedLogo}></Image></a>
-            <a href="https://www.facebook.com/safelivingspace "><Image height='40px' width='40px' src={FacebookLogo}></Image></a>
-            <a href="https://www.instagram.com/safelivingspace/?hl=en"><Image  height='40px' width='40px'src={InstaLogo}></Image></a>
+            <a href="https://www.instagram.com/safelivingspace/?hl=en"><img height='40px' width='40px' src={getImageByName('linkedin-white.png')}></img></a>
+            <a href="https://www.facebook.com/safelivingspace "><img height='40px' width='40px' src={getImageByName('facebook-white.png')}></img></a>
+            <a href="https://www.instagram.com/safelivingspace/?hl=en"><img  height='40px' width='40px'src={getImageByName('insta-white.png')}></img></a>
           </div>
           
         </div>

@@ -1,12 +1,8 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Carousel from '../components/Carousel/Carousel';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import MissionLogo1 from '../public/images/missionLogo1.png';
-import MissionLogo2 from '../public/images/missionLogo2.png';
-import MissionLogo3 from '../public/images/missionLogo3.png';
-import HandImg from '../public/images/hand-img.png';
+import { getImageByName } from '../utils/imgLoader'
 
 export default function Home() {
   return (
@@ -31,14 +27,14 @@ export default function Home() {
             <h1 className="work-title">Our Work</h1>
             <div className="work-box-container">
               <div className="work-box"> 
-              <Image width="80px" height="80px" src={MissionLogo1}></Image>
+              <img width="80px" height="80px" src={getImageByName('missionLogo1.png')}></img>
                 <h3 className="work-header"> Resources </h3>
                 <p className="work-text">Providing innovative training for first
                   responders and state of the art educational
                   resources to victims of domestic violence</p>
               </div>
               <div className="work-box"> 
-              <Image width="80px" height="80px" src={MissionLogo2}></Image>
+              <img width="80px" height="80px" src={getImageByName('missionLogo2.png')}></img>
                 <h3 className="work-header"> Community </h3>
                 <p className="work-text">
                 Uniting healthcare workers, policy makers,
@@ -47,7 +43,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="work-box">
-              <Image width="80px" height="80px" src={MissionLogo3}></Image>
+              <img width="80px" height="80px" src={getImageByName('missionLogo3.png')}></img>
                 <h3 className="work-header"> Advocacy </h3>
                 <p className="work-text">Pushing for systemic reform in the detection,
                   prevention and treatment of domestic violence</p>
@@ -68,7 +64,7 @@ export default function Home() {
             inquiries with our team, please email us at <b>edie@safelivingspace.org</b>
             </p>
           </div>
-          <Image width="1000px" height="800px" src={HandImg}></Image>
+          <img width="1000px" height="800px" src={getImageByName('hand-img.png')}></img>
         </div>
       </main>
       <footer>

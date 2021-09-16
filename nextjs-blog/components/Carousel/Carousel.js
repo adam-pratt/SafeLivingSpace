@@ -1,19 +1,14 @@
-import Image from 'next/Image';
-import boximg1 from '../../public/images/boximg1.jpg'
-import boximg2 from '../../public/images/boximg2.jpg'
-import boximg3 from '../../public/images/boximg3.jpg'
-import boximg4 from '../../public/images/boximg4.jpg'
-import boximg5 from '../../public/images/boximg5.jpg'
+import { getImageByName } from '../../utils/imgLoader';
 
 export default function Carousel() {
   const boxSize = '450px';
     return(
       <div className="carouselContainer">
-        <div className="carouselBoxTransparent"><Image src={boximg1} height={boxSize} width={boxSize}/></div>
-        <div className="carouselBox"><Image src={boximg2} height={boxSize} width={boxSize}/></div>
-        <div className="carouselBox"><Image src={boximg3} height={boxSize} width={boxSize}/></div>
-        <div className="carouselBox"><Image src={boximg4} height={boxSize} width={boxSize}/></div>
-        <div className="carouselBoxTransparent"><Image src={boximg5} height={boxSize} width={boxSize}/></div>
+        {/* <div className="carouselBoxTransparent"><img src={getImageByName('boximg1.jpg')} height={boxSize} width={boxSize}/></div> */}
+        <div className="carouselBox"><img src={getImageByName('boximg2.jpg')} height={boxSize} width={boxSize}/></div>
+        <div className="carouselBox"><img src={getImageByName('boximg3.jpg')} height={boxSize} width={boxSize}/></div>
+        <div className="carouselBox"><img src={getImageByName('boximg4.jpg')} height={boxSize} width={boxSize}/></div>
+        {/* <div className="carouselBoxTransparent"><img src={getImageByName('boximg5.jpg')} height={boxSize} width={boxSize}/></div> */}
         <style jsx> {`
           .carouselBox {
            margin 0 20px 0 20px;
@@ -28,7 +23,7 @@ export default function Carousel() {
           }
 
           .carouselContainer {
-            width: 250%;
+            width: 100%;
             overflow-x: hidden;
             padding: 40px 0 40px 0;
             background-image: linear-gradient(to bottom right, #573494, #973494);
