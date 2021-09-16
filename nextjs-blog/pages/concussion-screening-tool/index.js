@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
-
+import { getImageByName } from '../../utils/imgLoader'
 export default function GetInvolved() {
     return (
         <div className='get-involved-container'>
             <Head>
-                <title>Donate</title>
+                <title>Concussion Screening Tool</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
             <div className="banner-wrapper">
@@ -14,27 +14,9 @@ export default function GetInvolved() {
             </div>
             <div className="banner-spacer"/>
             <h1 className='title'>
-                Donate
+                Concussion Screening Tool
             </h1>
-            <div className="text">
-            All donations directly fund efforts to support victims of domestic violence.
-            Thank you for your generosity.
-            </div>
-            <div className='button-wrapper'>
-                <a href='https://www.paypal.com/donate?hosted_button_id=X7CELSBLXK9VQ' className='paypal'>
-                    Paypal
-                </a>
-                <div className='venmo'>
-                    <div className='venmo-header'>Venmo</div>
-                    <div className='venmo-name'>@Safe-Living-Space</div>
-                </div>
-            </div>
-            <h1 className='title'>
-                Join the Mailing List
-            </h1>
-            <div className="text">
-            TODO
-            </div>
+            <img width="80%" height="80%" src={getImageByName('concussion-screening-tools.png')}></img>
             <footer>
                 {Footer()}
             </footer>

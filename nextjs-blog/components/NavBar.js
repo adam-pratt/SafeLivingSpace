@@ -6,7 +6,7 @@ export default function NavBar() {
         <ul>
           <li><Link href="/who-we-are"><a>WHO WE ARE</a></Link></li>
           <li><Link href="/what-we-do"><a>WHAT WE DO</a></Link></li>
-          <li><Link href="/"><a>RESOURCES</a></Link></li>
+          <li><Link href="/concussion-screening-tool"><a>TOOLS</a></Link></li>
           <li><Link href="/get-involved"><a>GET INVOLVED</a></Link></li>
           <li><Link href="/contact-us"><a>CONTACT US</a></Link></li>
         </ul>
