@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/Link';
+
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 
@@ -26,19 +28,44 @@ export default function WhoWeAre() {
             <h1 className='title'>
                 Projects
             </h1>
-            <h3 className="text">Vignette of Concussion Self-Screening Tool</h3>
-            <div>
-                We’re developing novel tools dedicated to screening for concussion secondary to domestic, intimate partner, and family violence.
+            <h3 className="sub-title">Vignette of Concussion Self-Screening Tool</h3>
+            <div className="text">
+                We’re developing novel tools dedicated to screening for concussion secondary to domestic, intimate partner, and family violence.                
             </div>
-            <b>Learn more under Concussion Toolkit</b>
-            <h3 className="text"> First Responders Tool</h3>
-            <div>
-                TODO
+            <Link href="/concussion-screening-tool"><a> Learn More UnderConcussion Toolkit</a></Link>
+            <h3 className="sub-title">First Responders Tool</h3>
+            <div className="text">
+                    Coming Soon!
             </div>
             <footer>
                 {Footer()}
             </footer>
             <style jsx> {`
+                a {
+                    font-weight: 190;
+                    word-spacing: 2px;
+                    color: #573494;
+                    letter-spacing: 1px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 24px;
+                    font-weigth: 200;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+                .sub-title {
+                    font-weight: 250;
+                    word-spacing: 2px;
+                    color: #573494;
+                    letter-spacing: 1px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 24px;
+                }
                 .who-we-are-container {
                     display: flex;
                     flex-direction: column;
@@ -77,6 +104,7 @@ export default function WhoWeAre() {
                 }
 
                 footer {
+                    margin-top: 30px;
                     width: 100%;
                 }
             `}
