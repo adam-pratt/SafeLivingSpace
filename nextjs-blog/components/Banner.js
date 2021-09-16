@@ -13,16 +13,18 @@ export default function Banner() {
               <h1 className='banner-text'> Safe Living Space</h1>
             </a>
           </Link>
+          <div className='nav-bar-wrapper'>
+            { NavBar()}
+          </div>
           {DonateButton()}
-        </div>
-        <div className='nav-bar-wrapper'>
-          { NavBar()}
         </div>
         <style jsx>{`
           a {
             text-decoration: none;
           }
           .nav-bar-wrapper {
+            margin-right: 200px;
+            padding-top: 8px;
             justify-content: center;
             display: flex;
           }
@@ -31,6 +33,8 @@ export default function Banner() {
             width: 95%;
             display: flex;
             justify-content: space-between;
+            display: flex;
+            align-items: center;
           }
           .banner-logo {
             display: flex;
@@ -42,6 +46,9 @@ export default function Banner() {
             color: #573494
             font-weight: 170;
             word-spacing: 2px;
+            display: flex;
+            align-items: center;
+            font-size: 32px;
           }
 
           .banner-text:hover {

@@ -24,6 +24,7 @@ export default function NavBar() {
             font-size: 18px;
             display: inline;
             padding: 0 20px 0 20px;
+            font-weight: 400;
           }
 
           a {
