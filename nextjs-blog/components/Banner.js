@@ -1,5 +1,4 @@
 import { getImageByName } from '../utils/imgLoader';
-import Link from 'next/Link';
 import NavBar from './NavBar';
 import DonateButton from './DonateButton';
 import HambergerMenu from './HambMenu';
@@ -8,12 +7,10 @@ export default function Banner() {
     return(
       <div>
         <div className="banner">
-          <Link href='/'>
-            <a className='banner-logo'>
+            <a className='banner-logo' href='http://safelivingspace.org/'>
               <img width="40px" height="40px" src={getImageByName('SlsLogo.jpg')}></img>
               <h1 className='banner-text'> Safe Living Space</h1>
             </a>
-          </Link>
           { NavBar()}
           <div className='donate-button-wrapper'>{DonateButton()}</div>
           <div className="mobile-menu">{HambergerMenu()}</div>

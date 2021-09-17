@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/Link';
 
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
@@ -32,7 +31,7 @@ export default function WhoWeAre() {
             <div className="text">
                 We’re developing novel tools dedicated to screening for concussion secondary to domestic, intimate partner, and family violence.                
             </div>
-            <Link href="/concussion-screening-tool"><a> Learn More UnderConcussion Toolkit</a></Link>
+            <li><a href="http://safelivingspace.org/concussion-screening-tool">Learn More UnderConcussion Toolkit</a></li>
             <h3 className="sub-title">First Responders Tool</h3>
             <div className="text">
                     Coming Soon!

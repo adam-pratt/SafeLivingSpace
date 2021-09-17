@@ -1,5 +1,3 @@
-import Link from 'next/Link';
-
 export default function HambergerMenu() {
     return(
         <div>
@@ -10,11 +8,11 @@ export default function HambergerMenu() {
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <Link href="/who-we-are"><a><li>WHO WE ARE</li></a></Link>
-                    <Link href="/what-we-do"><a><li>WHAT WE DO</li></a></Link>
-                    <Link href="/concussion-screening-tool"><a><li>TOOLS</li></a></Link>
-                    <Link href="/get-involved"><a><li>GET INVOLVED</li></a></Link>
-                    <Link href="/contact-us"><a><li>CONTACT US</li></a></Link>
+                <li><a href="http://safelivingspace.org/who-we-are">WHO WE ARE</a></li>
+                <li><a href="http://safelivingspace.org/what-we-do">WHAT WE DO</a></li>
+                <li><a href="http://safelivingspace.org/concussion-screening-tool">TOOLS</a></li>
+                <li><a href="http://safelivingspace.org/get-involved">GET INVOLVED</a></li>
+                <li><a href="http://safelivingspace.org/contact-us">CONTACT US</a></li>
                 </ul>
             </div>
             </nav>
