@@ -1,3 +1,3 @@
 export const getImageByName = (imgName) => {
-    return `https://safe-living-space.s3.us-west-1.amazonaws.com/images/${imgName}`
+    return `http://safelivingspace.org.s3-website-us-west-1.amazonaws.com/images/${imgName}`
 }

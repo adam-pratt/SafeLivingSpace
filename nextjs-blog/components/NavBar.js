@@ -1,14 +1,13 @@
-import Link from 'next/Link';
 
 export default function NavBar() {
     return(
       <div className='nav-container'>
         <ul>
-          <li><Link href="/who-we-are"><a>WHO WE ARE</a></Link></li>
-          <li><Link href="/what-we-do"><a>WHAT WE DO</a></Link></li>
-          <li><Link href="/concussion-screening-tool"><a>TOOLS</a></Link></li>
-          <li><Link href="/get-involved"><a>GET INVOLVED</a></Link></li>
-          <li><Link href="/contact-us"><a>CONTACT US</a></Link></li>
+          <li><a href="http://safelivingspace.org/who-we-are">WHO WE ARE</a></li>
+          <li><a href="http://safelivingspace.org/what-we-do">WHAT WE DO</a></li>
+          <li><a href="http://safelivingspace.org/concussion-screening-tool">TOOLS</a></li>
+          <li><a href="http://safelivingspace.org/get-involved">GET INVOLVED</a></li>
+          <li><a href="http://safelivingspace.org/contact-us">CONTACT US</a></li>
         </ul>
         <style jsx>{`
          

@@ -33,8 +33,11 @@ export default function GetInvolved() {
                 Join the Mailing List
             </h1>
             <div className="text">
-            TODO
+                Coming Soon!
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
             <footer>
                 {Footer()}
             </footer>
