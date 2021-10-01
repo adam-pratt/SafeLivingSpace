@@ -42,7 +42,7 @@ export default function ContactUs() {
                 .banner-spacer {
                     width: 100%;
                     height: 10px;
-                    background-image: linear-gradient(to bottom right, #573494, #973494);
+                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
                 }
 
                 .title {
@@ -50,7 +50,7 @@ export default function ContactUs() {
                     display: felx;
                     justify-content: center;
                     padding: 100px 0 30px 0;
-                    color: #573494;
+                    color: #370F7A;
                     font-size: 60px;
                 }
 

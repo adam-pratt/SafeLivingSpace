@@ -5,7 +5,7 @@ export default function DonateButton() {
             <style jsx>{`
                  .donate-button {
                     border-radius: 16px;
-                    background-image: linear-gradient(to bottom right, #573494, #973494);
+                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
                     border: none;
                     color: white;
                     padding: 15px 32px;

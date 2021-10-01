@@ -43,7 +43,7 @@ export default function WhoWeAre() {
                 a {
                     font-weight: 190;
                     word-spacing: 2px;
-                    color: #573494;
+                    color: #370F7A;
                     letter-spacing: 1px;
                     display: flex;
                     justify-content: center;
@@ -58,7 +58,7 @@ export default function WhoWeAre() {
                 .sub-title {
                     font-weight: 250;
                     word-spacing: 2px;
-                    color: #573494;
+                    color: #370F7A;
                     letter-spacing: 1px;
                     display: flex;
                     justify-content: center;
@@ -79,14 +79,14 @@ export default function WhoWeAre() {
                 .banner-spacer {
                     width: 100%;
                     height: 10px;
-                    background-image: linear-gradient(to bottom right, #573494, #973494);
+                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
                 }
 
                 .title {
                     display: felx;
                     justify-content: center;
                     margin: 30px 0 30px 0;
-                    color: #573494;
+                    color: #370F7A;
                     font-size: 60px;
                 }
 

@@ -10,15 +10,6 @@ export default function Carousel() {
         <div><img className="carouselBox" src={getImageByName('boximg5.jpg')} /></div>
         {/* <div className="carouselBoxTransparent"><img src={getImageByName('boximg5.jpg')} height={boxSize} width={boxSize}/></div> */}
         <style jsx> {`
-
-        @media only screen and (max-width: 1000px) {
-          carouselBox {
-            margin 0 20px 0 20px;
-            height: 250px;
-            width: 250px;
-            }
-        }
-
         .carouselBox {
           margin 0 20px 0 20px;
           height: 450px;
@@ -37,7 +28,7 @@ export default function Carousel() {
           width: 100%;
           overflow-x: hidden;
           padding: 40px 0 40px 0;
-          background-image: linear-gradient(to bottom right, #573494, #973494);
+          background-image: linear-gradient(to bottom right, #370F7A, #973494);
           display: flex;
           align-items: center;
           justify-content: center;

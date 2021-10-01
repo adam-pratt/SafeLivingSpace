@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Carousel from '../components/Carousel/Carousel';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import { getImageByName } from '../utils/imgLoader'
@@ -13,42 +12,40 @@ export default function Home() {
       </Head>
       <div className="bannerWrapper">{Banner()}</div>
       <main>
-        {Carousel()}
-        <h3 className="mission-title">Our Mission</h3>
-        <p className="mission-text">Because everyone deserves to be safe where they live,
-          Safe Living Space serves as the agent to coordinate multiple
-          stakeholders who are healthcare, safety, and subject matter experts.
-          These dynamic and diverse individuals team together to provide YOU 
-          education, information, research, and data to identify, treat, and
-          prevent traumatic brain injury and concussion secondary to the experience
-          of domestic, intimate partner, and family violence</p>
-        <div className="work-background">
-          <div className="work-container">
-            <h1 className="work-title">Our Work</h1>
-            <div className="work-box-container">
-              <div className="work-box"> 
-              <img width="80px" height="80px" src={getImageByName('missionLogo1.png')}></img>
-                <h3 className="work-header"> Resources </h3>
-                <p className="work-text">Providing innovative training for first
-                  responders and state of the art educational
-                  resources to victims of domestic violence</p>
-              </div>
-              <div className="work-box"> 
-              <img width="80px" height="80px" src={getImageByName('missionLogo2.png')}></img>
-                <h3 className="work-header"> Community </h3>
-                <p className="work-text">
-                Uniting healthcare workers, policy makers,
-                victims and the general public against domestic
-                violence
-                </p>
-              </div>
-              <div className="work-box">
-              <img width="80px" height="80px" src={getImageByName('missionLogo3.png')}></img>
-                <h3 className="work-header"> Advocacy </h3>
-                <p className="work-text">Pushing for systemic reform in the detection,
-                  prevention and treatment of domestic violence</p>
-              </div>
-            </div>
+        <img className="homepageImage" src={getImageByName('hands.png')}>
+
+        </img>
+        <h3 className="mission-title">Mission</h3>
+        <p className="mission-text">Safe Living Space is dedicated to creating a world where everyone is safe where they live.
+        <br></br>
+        <br></br>
+            We coordinate the expertise of healthcare, safety, and subject matter experts to integrate cutting-edge education 
+            and research to identify, prevent, and treat traumatic brain injury and concussion secondary to the experience of 
+            domestic, intimate partner, and family violence.
+        </p>
+        <div className="work-container">
+          <h1 className="work-title">Our Work</h1>
+          <div className="work-icon-container">
+            <img className="work-icon-left" width="120px" height="120px" src={getImageByName('icon1.png')}></img>
+            <img className="work-icon-middle" width="140px" height="120px" src={getImageByName('icon2.png')}></img>
+            <img className="work-icon-right" width="140px" height="120px" src={getImageByName('icon3.png')}></img>
+          </div>
+          <div className="work-subtitle-container">
+            <div className="work-subtitle">Resources</div>
+            <div className="work-subtitle">Community</div>
+            <div className="work-subtitle">Advocacy</div>
+          </div>
+          <div className="work-text-container">
+            <div className="work-text">Provide innovative concussion screening tools
+            for individuals and first responders to aid in the detection of concussion from
+            domestic, intimate partner, and family violence</div>
+            <div className="work-text">Uniting healthcare workers, first responders,
+            policy makers, the legal system, the public at large, and anyone who has
+            experienced violence where they live</div>
+            <div className="work-text">We are a source of education for leaders and
+            policymakers on identifying, preventing, and treating concussion
+            and traumatic brain injury as a result of domestic,
+            intimate partner, and family violence</div>
           </div>
         </div>
         <div className='join-us-container'>
@@ -64,7 +61,7 @@ export default function Home() {
             inquiries with our team, please email us at <b>edie@safelivingspace.org</b>
             </p>
           </div>
-          <img width="1000px" height="800px" src={getImageByName('hand-img.png')}></img>
+          <img width="50%" height="40%" src={getImageByName('hand-img.png')}></img>
         </div>
       </main>
       <footer>
@@ -72,8 +69,47 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          overflow-x: hidden;
+        .work-icon-left {
+          margin: 0 10% 0 3%;
+          width: 120px;
+          height: 120px;
+        }
+        .work-icon-middle {
+          margin: 0 14% 0 14%;
+          width: 140px;
+          height: 120px;
+        }
+        .work-icon-right {
+          margin: 0 3% 0 10%;
+          width: 120px;
+          height: 120px;
+        }
+        .work-icon-container {
+          justify-content: space-between;
+        }
+        .homepageImage {
+          display: block;
+          max-width:100%;
+          width: auto;
+          height: auto;
+        }
+
+        .work-text-container {
+          display: flex;
+          margin-bottom: 3%;
+          margin-top: 3%;
+        }
+        .work-subtitle {
+          font-size: 42px;
+          font-weight: 390;
+          color: white;
+          margin: 0 10% 0 10%;
+        }
+        .work-subtitle-container {
+          background-color: #370F7A;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
         }
 
         .bannerWrapper {
@@ -84,7 +120,7 @@ export default function Home() {
           margin: 0 4% 0 4%;
         }
         .join-us-text {
-          font-weight: 190;
+          font-weight: 390;
           word-spacing: 2px;
           letter-spacing: 1px;
           font-size: 24px;
@@ -98,31 +134,27 @@ export default function Home() {
           color: #333333;
         }
         .join-us-title {
-          color: #573494;
+          color: #370F7A;
           font-size: 60px;
         }
 
         .work-text {
-          font-weight: 190;
+          flex-basis: 100%;
+          text-align: center;
+          font-weight: 390;
           word-spacing: 2px;
-          color: white;
+          color: black;
           letter-spacing: 1px;
-          font-size: 24px;
+          font-size: 28px;
+          margin: 0 1% 0 1%;
         }
         .work-header {
           font-style: italic;
-          font-size: 40px;
+          font-size: 50px;
         }
         .work-title {
           margin: 0 0 24px 0;
           font-size: 60px;
-        }
-        .work-background {
-          padding-top: 80px;
-          background-image: linear-gradient(to bottom right, #573494, #973494);
-          width: 100%;
-          display: felx;
-          justify-content: center;
         }
         .work-box {
           padding: 0 10px 0 10px;
@@ -138,24 +170,27 @@ export default function Home() {
         .work-container {
           text-align: center;
           color: white;
-          width: 90%;
+          width: 100%;
         }
         .mission-title {
-          margin: 80px 0 0 0;
-          color: #573494;
-          font-size: 60px;
+          color: #370F7A;
+          font-size: 50px;
+          margin-bottom: 0px;
+        }
+        .work-title {
+          color: #370F7A;
+          font-size: 50px;
         }
         .mission-text {
           width: 80%;
-          font-weight: 190;
+          font-weight: 390;
           word-spacing: 2px;
           color: #222222;
           letter-spacing: 1px;
           display: flex;
           justify-content: center;
           text-align: center;
-          font-size: 24px;
-          margin-bottom: 80px;
+          font-size: 28px;
         }
         .slsLogo {
           height: 10px;
@@ -176,6 +211,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          overflow: hidden;
         }
 
         main {

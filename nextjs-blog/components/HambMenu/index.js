@@ -44,7 +44,7 @@ export default function HambergerMenu() {
                     #menuToggle a
                     {
                     text-decoration: none;
-                    color: #573494;
+                    color: #370F7A;
                     
                     transition: color 0.3s ease;
                     }
@@ -83,7 +83,7 @@ export default function HambergerMenu() {
                     margin-bottom: 5px;
                     position: relative;
                     
-                    background: #573494;
+                    background: #370F7A;
 
                     border-radius: 3px;
                     

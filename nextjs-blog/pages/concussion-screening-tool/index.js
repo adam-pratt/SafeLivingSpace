@@ -45,7 +45,7 @@ export default function GetInvolved() {
                 .paypal {
                     border-radius: 28px;
                     text-decoration: none;
-                    background-image: linear-gradient(to bottom right, #573494, #973494);
+                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
                     border-width: 2px;
                     padding: 25px 90px 25px 90px;
                     font-weight: 190;
@@ -68,11 +68,11 @@ export default function GetInvolved() {
                     background-color: white;
                     border-width: 2px;
                     padding: 23px 38px 23px 38px;
-                    border-color: #573494;
+                    border-color: #370F7A;
                     border-style: solid;
                     font-weight: 190;
                     word-spacing: 2px;
-                    color: #573494;
+                    color: #370F7A;
                     letter-spacing: 1px;
                     font-size: 30px;
                     weigth: 200px;
@@ -92,14 +92,14 @@ export default function GetInvolved() {
                 .banner-spacer {
                     width: 100%;
                     height: 10px;
-                    background-image: linear-gradient(to bottom right, #573494, #973494);
+                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
                 }
 
                 .title {
                     display: felx;
                     justify-content: center;
                     margin: 30px 0 30px 0;
-                    color: #573494;
+                    color: #370F7A;
                     font-size: 60px;
                 }
 

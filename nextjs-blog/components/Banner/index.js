@@ -1,7 +1,7 @@
-import { getImageByName } from '../utils/imgLoader';
-import NavBar from './NavBar';
-import DonateButton from './DonateButton';
-import HambergerMenu from './HambMenu';
+import { getImageByName } from '../../utils/imgLoader';
+import NavBar from '../Navbar';
+import DonateButton from '../DonateButton';
+import HambergerMenu from '../HambMenu';
 
 export default function Banner() {
     return(
@@ -27,9 +27,6 @@ export default function Banner() {
               display: none;
             }
           }
-
-         
-
           
           a {
             text-decoration: none;
@@ -50,12 +47,12 @@ export default function Banner() {
 
           .banner-text {
             margin: 5px 0 0 10px;
-            color: #573494
+            color: #370F7A
             font-weight: 170;
             word-spacing: 2px;
             display: flex;
             align-items: center;
-            font-size: 32px;
+            font-size: 42px;
           }
 
           .banner-text:hover {
@@ -64,7 +61,7 @@ export default function Banner() {
 
           .donate-button {
             border-radius: 16px;
-            background-image: linear-gradient(to bottom right, #573494, #973494);
+            background-image: linear-gradient(to bottom right, #370F7A, #973494);
             border: none;
             color: white;
             padding: 15px 32px;
@@ -78,7 +75,7 @@ export default function Banner() {
             margin-top: 10px;
             width: 100%;
             height: 10px;
-            background-image: linear-gradient(to bottom right, #573494, #973494);
+            background-image: linear-gradient(to bottom right, #370F7A, #973494);
           }
         `}</style>
       </div>

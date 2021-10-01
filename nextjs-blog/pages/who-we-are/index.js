@@ -49,7 +49,7 @@ export default function WhoWeAre() {
             <style jsx> {`
                 .title {
                     margin: 20px 0 0 0;
-                    color: #573494;
+                    color: #370F7A;
                     font-size: 60px;
                 }
 
@@ -68,7 +68,7 @@ export default function WhoWeAre() {
                     margin-top: 10px;
                     width: 100%;
                     height: 10px;
-                    background-image: linear-gradient(to bottom right, #573494, #973494);
+                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
                 }
 
                 .section-container {

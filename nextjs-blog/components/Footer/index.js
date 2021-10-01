@@ -1,4 +1,4 @@
-import { getImageByName } from '../utils/imgLoader';
+import { getImageByName } from '../../utils/imgLoader';
 
 export default function Footer() {
     return(
@@ -20,7 +20,7 @@ export default function Footer() {
           .footer-container {
             height: 100px;
             width: 100%;
-            background-image: linear-gradient(to bottom right, #573494, #973494);
+            background-color: #370F7A;
             justify-content: right;
             display: flex;
             align-items: center;
