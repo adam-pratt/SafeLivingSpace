@@ -6,7 +6,6 @@ export default function ContactForm() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const handleSubmit = (event) => {
-
         event.preventDefault();
         fetch('https://jbywqajk4h.execute-api.us-west-1.amazonaws.com/Prod/submitForm', {
             method: 'POST',

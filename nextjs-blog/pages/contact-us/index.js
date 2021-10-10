@@ -44,21 +44,6 @@ export default function ContactUs() {
                     padding: 10px 0 10px 0;
                 }
 
-                .banner-spacer {
-                    width: 100%;
-                    height: 10px;
-                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
-                }
-
-                .title {
-                    margin: 0;
-                    display: felx;
-                    justify-content: center;
-                    padding: 100px 0 30px 0;
-                    color: #370F7A;
-                    font-size: 60px;
-                }
-
                 .text {
                     width: 80%;
                     font-weight: 190;
