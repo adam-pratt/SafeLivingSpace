@@ -1,29 +1,33 @@
 import Head from 'next/head'
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
+import ContactForm from '../../components/ContactForm';
+import PageTitle from '../../components/PageTitle';
 
 export default function ContactUs() {
+    const pageTitle = "Contact Us"
     return (
         <div className='get-involved-container'>
             <Head>
-                <title>Get Involved</title>
+                <title>Contant Us</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
             <div className="banner-wrapper">
                 {Banner()}
             </div>
-            <div className="banner-spacer"/>
-            <h1 className='title'>
-                Get Involved
-            </h1>
+            {PageTitle(pageTitle)}
             <div className="text">
-                We are looking for dedicated and passionate people who want to make a difference by improving the detection,
-                treatment and prevention of domestic violence.
-                <br></br>
-                <br></br>
-                If you would like to help us achieve our mission or have other inquiries with our team, please email 
-                us at edie@safelivingspace.org
+                <p>
+                    If you would like to help us achieve our mission or have other inquiries about our team,
+                    please send us a message by filling out the form below
+                    <br></br>
+                    <br></br>
+                    We look forward to hearing from you.
+                </p>
             </div>
+            {ContactForm()}
+            <br></br>
+            <br></br>
             <footer>
                 {Footer()}
             </footer>
@@ -33,6 +37,7 @@ export default function ContactUs() {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    oveflow: hidden;
                 }
                 .banner-wrapper {
                     width: 100%;
@@ -64,7 +69,7 @@ export default function ContactUs() {
                     justify-content: center;
                     text-align: center;
                     font-size: 24px;
-                    padding-bottom: 100px;
+                    flex-direction: row;
                 }
 
                 footer {

@@ -47,8 +47,8 @@ export default function Banner() {
 
           .banner-text {
             margin: 5px 0 0 10px;
-            color: #370F7A
-            font-weight: 170;
+            color: #370F7A;
+            font-weight: 600;
             word-spacing: 2px;
             display: flex;
             align-items: center;

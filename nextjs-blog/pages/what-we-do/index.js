@@ -2,8 +2,11 @@ import Head from 'next/head'
 
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
+import PageTitle from '../../components/PageTitle';
 
 export default function WhoWeAre() {
+    //TODO: ADD VID
+    const pageTitle = "Projects"
     return (
         <div className='who-we-are-container'>
             <Head>
@@ -11,30 +14,25 @@ export default function WhoWeAre() {
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
             <div className="banner-wrapper">{Banner()}</div>
-            <div className="banner-spacer"/>
-            <h1 className='title'>
-                What We Do
-            </h1>
-            <divv className="text">
-                Because everyone deserves to be safe where they live,
-                Safe Living Space serves as the agent to coordinate multiple
-                stakeholders who are healthcare, safety, and subject matter experts.
-                These dynamic and diverse individuals team together to provide YOU 
-                education, information, research, and data to identify, treat, and
-                prevent traumatic brain injury and concussion secondary to the experience
-                of domestic, intimate partner, and family violence
-            </divv>
-            <h1 className='title'>
-                Projects
-            </h1>
-            <h3 className="sub-title">Vignette of Concussion Self-Screening Tool</h3>
+            {PageTitle(pageTitle)}
+            <a className="sub-title" href="http://safelivingspace.org/concussion-screening-tool">Concussion Screening Tools</a>
             <div className="text">
-                We’re developing novel tools dedicated to screening for concussion secondary to domestic, intimate partner, and family violence.                
+                The concussion experts at Safe Living Space recognized that no concussion screening tools existed for quickly assessing the status of individuals experiencing domestic/intimate
+                partner/family violence. They also recognized that many injured individuals are unable to access medical care due to both COVID-19 and the intimating/controlling nature of partner and family violence.     
             </div>
-            <a href="http://safelivingspace.org/concussion-screening-tool">Learn More UnderConcussion Toolkit</a>
-            <h3 className="sub-title">First Responders Tool</h3>
             <div className="text">
-                    Coming Soon!
+                <div className="bold-text">In response, the team developed two novel screening tools:</div>
+                <b>1. The first responder screening tool</b> based on current standards for screening sports concussions, such as MMA and football. 
+                <br></br>
+                <br></br>
+                <b>2. The self-screening tool</b> for individuals. 
+                <br></br>
+                <br></br>
+                The team also developed guidance for managing an individual’s return to sport following a concussion, which may serve as a guide for evaluating the appropriate point in time for an individual’s return to the social environment in which injuries occurred.
+                <br></br>
+                <br></br>
+                <div className="sub-title">Concussion Research in DV/IPV/FV</div>
+                In partnership with WEAVE, NorthBay, ThinkFirst, Stanford, and many others, Dr. Zusman and team are advancing concussion research, including assessment of concussion and whiplash in individuals with certain types of migraine headaches, Chronic Pain Syndromes, Fibromyalgia, and Alzheimer’s
             </div>
             <footer>
                 {Footer()}
@@ -50,13 +48,12 @@ export default function WhoWeAre() {
                     text-align: center;
                     font-size: 24px;
                     font-weigth: 200;
-                    text-decoration: none;
                 }
                 a:hover {
-                    text-decoration: underline;
+                    opacity: 0.5;
                 }
-                .sub-title {
-                    font-weight: 250;
+                .bold-text {
+                    font-weight: 200;
                     word-spacing: 2px;
                     color: #370F7A;
                     letter-spacing: 1px;
@@ -64,8 +61,24 @@ export default function WhoWeAre() {
                     justify-content: center;
                     text-align: center;
                     font-size: 24px;
+                    margin-bottom: 24px;
+                    margin-top: 24px;
+                }
+
+                .sub-title {
+                    font-weight: 300;
+                    word-spacing: 2px;
+                    color: #370F7A;
+                    letter-spacing: 1px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 28px;
+                    margin-bottom: 24px;
+                    margin-top: 24px;
                 }
                 .who-we-are-container {
+                    overflow: hidden;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -97,9 +110,11 @@ export default function WhoWeAre() {
                     color: #222222;
                     letter-spacing: 1px;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     text-align: center;
                     font-size: 24px;
+                    margin-bottom: 24px;
                 }
 
                 footer {

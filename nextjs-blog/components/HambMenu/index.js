@@ -10,9 +10,9 @@ export default function HambergerMenu() {
                 <ul id="menu">
                 <li><a href="http://safelivingspace.org/who-we-are">WHO WE ARE</a></li>
                 <li><a href="http://safelivingspace.org/what-we-do">WHAT WE DO</a></li>
-                <li><a href="http://safelivingspace.org/concussion-screening-tool">TOOLS</a></li>
-                <li><a href="http://safelivingspace.org/get-involved">GET INVOLVED</a></li>
+                <li><a href="http://safelivingspace.org/concussion-screening-tool">RESOURCES</a></li>
                 <li><a href="http://safelivingspace.org/contact-us">CONTACT US</a></li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ">DONATE</a></li>
                 </ul>
             </div>
             </nav>

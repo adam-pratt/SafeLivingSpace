@@ -6,7 +6,7 @@ export default function GetInvolved() {
     return (
         <div className='get-involved-container'>
             <Head>
-                <title>Concussion Screening ToolS</title>
+                <title>Resources</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
             <div className="banner-wrapper">
@@ -14,7 +14,7 @@ export default function GetInvolved() {
             </div>
             <div className="banner-spacer"/>
             <h1 className='title'>
-                Concussion Screening Tools
+                Resources
             </h1>
             <img width="80%" height="80%" src={getImageByName('concussion-screening-tools.png')}></img>
             <br/>
@@ -25,6 +25,12 @@ export default function GetInvolved() {
                 {Footer()}
             </footer>
             <style jsx> {`
+                @media only screen and (max-width: 900px) {
+                    .title {
+                        font-size: 40px !important;
+                    }
+                }
+                
                 .venmo-header {
                     text-align: center;
                     padding-top: 20px;
@@ -79,6 +85,7 @@ export default function GetInvolved() {
                 }
 
                 .get-involved-container {
+                    overflow: hidden;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
