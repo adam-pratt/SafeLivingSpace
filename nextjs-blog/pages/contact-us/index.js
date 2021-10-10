@@ -37,7 +37,7 @@ export default function ContactUs() {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    oveflow: hidden;
+                    overflow: hidden;
                 }
                 .banner-wrapper {
                     width: 100%;

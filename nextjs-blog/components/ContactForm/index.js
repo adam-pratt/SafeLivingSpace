@@ -31,7 +31,7 @@ export default function ContactForm() {
         })
     }
     return (
-        <div>
+        <div className="form-wrapper">
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <div className="input-name">Name</div>
@@ -49,6 +49,20 @@ export default function ContactForm() {
                 <button type="submit" className="submit-button">Submit</button>
             </form>
             <style jsx>{`
+            @media only screen and (max-width: 900px) {
+                .form-wrapper {
+                    width: 300px;
+                }
+                .form-group {
+                    width: 200px !important;
+                }
+                .form-input-med {
+                    width: 300px !important;
+                }
+                .form-input-long {
+                    width: 300px !important;;
+                }
+            }
              .form-group {
                 display: flex;
                 flex-direction: column;
