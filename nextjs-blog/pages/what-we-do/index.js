@@ -34,10 +34,22 @@ export default function WhoWeAre() {
                 <div className="sub-title">Concussion Research in DV/IPV/FV</div>
                 In partnership with WEAVE, NorthBay, ThinkFirst, Stanford, and many others, Dr. Zusman and team are advancing concussion research, including assessment of concussion and whiplash in individuals with certain types of migraine headaches, Chronic Pain Syndromes, Fibromyalgia, and Alzheimer’s
             </div>
+            <iframe className='youtube-container'  src="https://www.youtube.com/embed/WdxYw2itR0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <footer>
                 {Footer()}
             </footer>
             <style jsx> {`
+                @media only screen and (max-width: 900px) {
+                    .youtube-container {
+                        width: 400px !important;
+                        height: 200px !important;
+                    }
+                }
+
+                .youtube-container {
+                    width: 1200px;
+                    height: 600px;
+                }
                 a {
                     font-weight: 190;
                     word-spacing: 2px;
