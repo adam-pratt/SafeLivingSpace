@@ -2,7 +2,10 @@ import Head from 'next/head'
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import { getImageByName } from '../../utils/imgLoader'
+import PageTitle from '../../components/PageTitle';
+
 export default function GetInvolved() {
+    const pageTitle = "Resources";
     return (
         <div className='get-involved-container'>
             <Head>
@@ -12,10 +15,7 @@ export default function GetInvolved() {
             <div className="banner-wrapper">
                 {Banner()}
             </div>
-            <div className="banner-spacer"/>
-            <h1 className='title'>
-                Resources
-            </h1>
+            {PageTitle(pageTitle)}
             <img width="80%" height="80%" src={getImageByName('concussion-screening-tools.png')}></img>
             <br/>
             <br/>
