@@ -50,7 +50,7 @@ export default function Tools() {
                 <a className="download-here" href="https://s3.us-west-1.amazonaws.com/safelivingspace.org/Documents/return-to-play-guide.pdf" target="_blank" rel="noopener noreferrer">View Tool</a> */}
                 <div className="boxed-content">
                     Please feel free to use these documents and modify them to your liking.
-                    If you choose to modify them, please send a copy of your revisions to edie@safelivingspace.org, so we can feature your work ad add to our collective
+                    If you choose to modify them, please send a copy of your revisions to edie@safelivingspace.org, so we can feature your work and add to our collective
                     knowledge of and resources for concussion screening.
                 </div>
             </div>
