@@ -60,6 +60,26 @@ export default function Tools() {
             
             <style jsx>
                 {`
+                @media only screen and (max-width: 900px) {
+                    .content-container {
+                        width: 80% !important;
+                    }
+                    .boxed-content {
+                        font-size: 20px !important;
+                        border-width: 4px !important;
+                    }
+                    .download-here {
+                        font-size: 20px !important;
+                    }
+                    .title-text {
+                        font-weight: 500 !important;
+                        font-size: 30px !important;
+                    }
+                    .description-text {
+                        font-weight: 400 !important;
+                        font-size: 20px !important;
+                    }
+                }
                 .boxed-content {
                     margin-top: 60px;
                     font-weight: 500;

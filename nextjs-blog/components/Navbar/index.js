@@ -19,6 +19,8 @@ export default function NavBar() {
           @media only screen and (max-width: 1670px) {
             .nav-container {
               margin-right: 0px !important;
+              margin-bottom: 0px !important;
+
             }
             li {
               font-size: 18px !important;
@@ -28,6 +30,7 @@ export default function NavBar() {
           .nav-container {
             margin-top: auto;
             margin-right: 200px;
+            margin-bottom: 6px;
           }
 
           ul {
