@@ -5,7 +5,7 @@ export default function NavBar() {
         <ul>
           <li><a href="http://safelivingspace.org/who-we-are">WHO WE ARE</a></li>
           <li><a href="http://safelivingspace.org/what-we-do">WHAT WE DO</a></li>
-          <li><a href="http://safelivingspace.org/concussion-screening-tool">RESOURCES</a></li>
+          <li><a href="http://safelivingspace.org/tools">RESOURCES</a></li>
           <li><a href="http://safelivingspace.org/get-involved">GET INVOLVED</a></li>
           <li><a href="http://safelivingspace.org/contact-us">CONTACT US</a></li>
         </ul>

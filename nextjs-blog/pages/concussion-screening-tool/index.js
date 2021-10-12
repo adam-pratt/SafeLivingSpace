@@ -30,7 +30,10 @@ export default function GetInvolved() {
                         font-size: 40px !important;
                     }
                 }
-                
+                .banner-wrapper {
+                    width: 100%;
+                    padding: 10px 0 10px 0;
+                }
                 .venmo-header {
                     text-align: center;
                     padding-top: 20px;
