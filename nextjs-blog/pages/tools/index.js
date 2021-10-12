@@ -12,9 +12,8 @@ export default function Tools() {
                 <title>{pageTitle}</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
-            <div className="banner-wrapper">
-                {Banner()}
-            </div>
+            <div className="banner-wrapper"><Banner/></div>
+
             {PageTitle(pageTitle)}
             <div className="content-container">
                 <div className="title-text">
@@ -76,7 +75,7 @@ export default function Tools() {
                     text-decoration: underline;
                 }
                 .download-here:hover {
-                    opacity: 0.7;
+                    opacity: 0.8;
                     cursor: pointer;
                 }
                 .content-container {

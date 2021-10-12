@@ -31,7 +31,7 @@ export default function Footer() {
           }
 
           a:hover {
-            opacity: 0.85;
+            opacity: 0.8;
           }
         `}
         </style>

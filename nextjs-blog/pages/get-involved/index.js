@@ -12,9 +12,7 @@ export default function GetInvolved() {
                 <title>Donate</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
-            <div className="banner-wrapper">
-                {Banner()}
-            </div>
+            <div className="banner-wrapper"><Banner/></div>
             {PageTitle(pageName)}
 
             <div className='sub-title'>

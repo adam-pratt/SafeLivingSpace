@@ -3,7 +3,7 @@ import NavBar from '../Navbar';
 import DonateButton from '../DonateButton';
 import HambergerMenu from '../HambMenu';
 
-export default function Banner() {
+function Banner() {
     return(
       <div>
         <div className="banner">
@@ -12,18 +12,12 @@ export default function Banner() {
               <h1 className='banner-text'> Safe Living Space</h1>
             </a>
           { NavBar()}
-          <div className='donate-button-wrapper'>{DonateButton()}</div>
+          <DonateButton/>
           <div className="mobile-menu">{HambergerMenu()}</div>
         </div>
         <style jsx>{`
           @media only screen and (min-width: 1400px) {
             .mobile-menu {
-              display: none;
-            }
-          }
-
-          @media only screen and (max-width: 1400px) {
-            .donate-button-wrapper {
               display: none;
             }
           }
@@ -56,19 +50,7 @@ export default function Banner() {
           }
 
           .banner-text:hover {
-            color: #973494;
-          }
-
-          .donate-button {
-            border-radius: 16px;
-            background-image: linear-gradient(to bottom right, #370F7A, #973494);
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
+            opacity: 0.8;
           }
 
           .header-spacer {
@@ -81,3 +63,5 @@ export default function Banner() {
       </div>
     )
   }
+
+export default Banner;

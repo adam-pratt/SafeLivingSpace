@@ -12,9 +12,7 @@ export default function GetInvolved() {
                 <title>Resources</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
-            <div className="banner-wrapper">
-                {Banner()}
-            </div>
+            <div className="banner-wrapper"><Banner/></div>
             {PageTitle(pageTitle)}
             <img width="80%" height="80%" src={getImageByName('concussion-screening-tools.png')}></img>
             <br/>

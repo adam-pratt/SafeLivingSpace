@@ -39,7 +39,7 @@ export default function NavBar() {
           }
 
           a:hover {
-              color: #973494 
+              color: #370F7A;
           }
           @media only screen and (max-width: 1400px) {
             .nav-container {

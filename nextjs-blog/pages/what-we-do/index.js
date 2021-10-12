@@ -13,7 +13,7 @@ export default function WhoWeAre() {
                 <title>What We Do</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
-            <div className="banner-wrapper">{Banner()}</div>
+            <div className="banner-wrapper"><Banner/></div>
             {PageTitle(pageTitle)}
             <a className="sub-title" href="http://safelivingspace.org/tools">Concussion Screening Tools</a>
             <div className="text">
@@ -51,7 +51,7 @@ export default function WhoWeAre() {
                     font-weigth: 200;
                 }
                 a:hover {
-                    opacity: 0.5;
+                    opacity: 0.8;
                 }
                 .bold-text {
                     font-weight: 400;

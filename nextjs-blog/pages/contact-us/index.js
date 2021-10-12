@@ -12,9 +12,7 @@ export default function ContactUs() {
                 <title>Contant Us</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
-            <div className="banner-wrapper">
-                {Banner()}
-            </div>
+            <div className="banner-wrapper"><Banner/></div>
             {PageTitle(pageTitle)}
             <div className="text">
                 <p>

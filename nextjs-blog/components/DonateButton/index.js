@@ -1,11 +1,11 @@
-export default function DonateButton() {
+function DonateButton() {
     return (
         <div>
             <a className='donate-button' href="https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ">Donate</a>
             <style jsx>{`
                  .donate-button {
                     border-radius: 16px;
-                    background-image: linear-gradient(to bottom right, #370F7A, #973494);
+                    background-color: #370F7A;
                     border: none;
                     color: white;
                     padding: 15px 32px;
@@ -16,10 +16,17 @@ export default function DonateButton() {
                 }
                           
                 .donate-button:hover {
-                    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+                    opacity: 0.8;
+                }
+                @media only screen and (max-width: 1400px) {
+                    .donate-button {
+                      display: none;
+                    }
                 }
             `}
             </style>
        </div>
     )
 }
+
+export default DonateButton;

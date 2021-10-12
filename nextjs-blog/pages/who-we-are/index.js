@@ -11,7 +11,7 @@ export default function WhoWeAre() {
                 <title>Who We Are</title>
                 <link rel="icon" href="/images/SlsLogo.jpg" />
             </Head>
-            <div className="banner-wrapper">{Banner()}</div>
+            <div className="banner-wrapper"><Banner/></div>
             {PageTitle(pageTitle)}
             <div className="main-container">
                 <div className='section-container'>

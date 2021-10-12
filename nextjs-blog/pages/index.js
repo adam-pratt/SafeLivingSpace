@@ -11,7 +11,7 @@ export default function Home() {
         <title>Safe Living Space</title>
         <link rel="icon" href="/images/SlsLogo.jpg" />
       </Head>
-      <div className="bannerWrapper">{Banner()}</div>
+      <div className="banner-wrapper"><Banner/></div>
       <main>
         <img className="homepageImage" src={getImageByName('hands.png')}>
 
@@ -54,7 +54,7 @@ export default function Home() {
         }
 
        
-        .bannerWrapper {
+        .banner-wrapper {
           width: 100%;
           padding: 10px 0 10px 0;
         }
