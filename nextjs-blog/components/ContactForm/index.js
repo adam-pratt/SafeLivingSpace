@@ -48,20 +48,6 @@ export default function ContactForm() {
                 <button type="submit" className="submit-button">Submit</button>
             </form>
             <style jsx>{`
-            @media only screen and (max-width: 900px) {
-                .form-wrapper {
-                    width: 300px;
-                }
-                .form-group {
-                    width: 200px !important;
-                }
-                .form-input-med {
-                    width: 300px !important;
-                }
-                .form-input-long {
-                    width: 300px !important;;
-                }
-            }
              .form-group {
                 display: flex;
                 flex-direction: column;
@@ -107,6 +93,20 @@ export default function ContactForm() {
                 letter-spacing: 1px;
                 display: flex;
                 font-size: 24px;
+            }
+            @media only screen and (max-width: 900px) {
+                .form-wrapper {
+                    width: 300px;
+                }
+                .form-group {
+                    width: 200px;
+                }
+                .form-input-med {
+                    width: 300px;
+                }
+                .form-input-long {
+                    width: 300px;
+                }
             }
             `}</style>
         </div>

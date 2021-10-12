@@ -25,11 +25,6 @@ export default function GetInvolved() {
                 {Footer()}
             </footer>
             <style jsx> {`
-                @media only screen and (max-width: 900px) {
-                    .title {
-                        font-size: 40px !important;
-                    }
-                }
                 .banner-wrapper {
                     width: 100%;
                     padding: 10px 0 10px 0;
@@ -127,6 +122,11 @@ export default function GetInvolved() {
 
                 footer {
                     width: 100%;
+                }
+                @media only screen and (max-width: 900px) {
+                    .title {
+                        font-size: 40px;
+                    }
                 }
             `}
             </style>

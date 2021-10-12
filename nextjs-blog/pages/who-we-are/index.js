@@ -78,17 +78,6 @@ export default function WhoWeAre() {
                 {Footer()}
             </footer>
             <style jsx> {`
-                @media only screen and (max-width: 900px) {
-                    .title {
-                        font-size: 40px !important;
-                    }
-                    .text {
-                        font-size: 18px !important;
-                    }
-                    .section-container {
-                        width: 70% !important;
-                    }
-                }
                 .intro-text {
                     font-weight: 190;
                     word-spacing: 2px;
@@ -142,6 +131,17 @@ export default function WhoWeAre() {
 
                 footer {
                     width: 100%;
+                }
+                @media only screen and (max-width: 900px) {
+                    .title {
+                        font-size: 40px;
+                    }
+                    .text {
+                        font-size: 18px;
+                    }
+                    .section-container {
+                        width: 70%;
+                    }
                 }
             `}
             </style>

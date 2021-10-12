@@ -60,26 +60,6 @@ export default function Tools() {
             
             <style jsx>
                 {`
-                @media only screen and (max-width: 900px) {
-                    .content-container {
-                        width: 80% !important;
-                    }
-                    .boxed-content {
-                        font-size: 20px !important;
-                        border-width: 4px !important;
-                    }
-                    .download-here {
-                        font-size: 20px !important;
-                    }
-                    .title-text {
-                        font-weight: 500 !important;
-                        font-size: 30px !important;
-                    }
-                    .description-text {
-                        font-weight: 400 !important;
-                        font-size: 20px !important;
-                    }
-                }
                 .boxed-content {
                     margin-top: 60px;
                     font-weight: 500;
@@ -131,7 +111,27 @@ export default function Tools() {
                     margin-top: 40px;
                     width: 100%;
                 }
-                `}
+                @media only screen and (max-width: 900px) {
+                    .content-container {
+                        width: 80%;
+                    }
+                    .boxed-content {
+                        font-size: 20px;
+                        border-width: 4px;
+                    }
+                    .download-here {
+                        font-size: 20px;
+                    }
+                    .title-text {
+                        font-weight: 500;
+                        font-size: 30px;
+                    }
+                    .description-text {
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                }
+            `}
             </style>
             <style jsx global>{`
                 html,

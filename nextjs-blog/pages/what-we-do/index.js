@@ -15,19 +15,15 @@ export default function WhoWeAre() {
             </Head>
             <div className="banner-wrapper">{Banner()}</div>
             {PageTitle(pageTitle)}
-            <a className="sub-title" href="http://safelivingspace.org/concussion-screening-tool">Concussion Screening Tools</a>
+            <a className="sub-title" href="http://safelivingspace.org/tools">Concussion Screening Tools</a>
             <div className="text">
                 The concussion experts at Safe Living Space recognized that no concussion screening tools existed for quickly assessing the status of individuals experiencing domestic/intimate
                 partner/family violence. They also recognized that many injured individuals are unable to access medical care due to both COVID-19 and the intimating/controlling nature of partner and family violence.     
             </div>
             <div className="text">
                 <div className="bold-text">In response, the team developed two novel screening tools:</div>
-                <b>1. The first responder screening tool</b> based on current standards for screening sports concussions, such as MMA and football. 
-                <br></br>
-                <br></br>
-                <b>2. The self-screening tool</b> for individuals. 
-                <br></br>
-                <br></br>
+                <div className="bold-text">1. The first responder screening tool</div> based on current standards for screening sports concussions, such as MMA and football. 
+                <div className="bold-text">2. The self-screening tool</div> for individuals. 
                 The team also developed guidance for managing an individual’s return to sport following a concussion, which may serve as a guide for evaluating the appropriate point in time for an individual’s return to the social environment in which injuries occurred.
                 <br></br>
                 <br></br>
@@ -39,13 +35,6 @@ export default function WhoWeAre() {
                 {Footer()}
             </footer>
             <style jsx> {`
-                @media only screen and (max-width: 900px) {
-                    .youtube-container {
-                        width: 400px !important;
-                        height: 200px !important;
-                    }
-                }
-
                 .youtube-container {
                     width: 1200px;
                     height: 600px;
@@ -65,16 +54,15 @@ export default function WhoWeAre() {
                     opacity: 0.5;
                 }
                 .bold-text {
-                    font-weight: 200;
+                    font-weight: 400;
                     word-spacing: 2px;
-                    color: #370F7A;
                     letter-spacing: 1px;
                     display: flex;
                     justify-content: center;
                     text-align: center;
                     font-size: 24px;
-                    margin-bottom: 24px;
-                    margin-top: 24px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
                 }
 
                 .sub-title {
@@ -132,6 +120,12 @@ export default function WhoWeAre() {
                 footer {
                     margin-top: 30px;
                     width: 100%;
+                }
+                @media only screen and (max-width: 900px) {
+                    .youtube-container {
+                        width: 400px;
+                        height: 200px;
+                    }
                 }
             `}
             </style>

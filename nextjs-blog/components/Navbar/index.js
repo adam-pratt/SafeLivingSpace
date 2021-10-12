@@ -10,22 +10,6 @@ export default function NavBar() {
           <li><a href="http://safelivingspace.org/contact-us">CONTACT US</a></li>
         </ul>
         <style jsx>{`
-          @media only screen and (max-width: 1400px) {
-            .nav-container {
-              display: none;
-            }
-          }
-
-          @media only screen and (max-width: 1670px) {
-            .nav-container {
-              margin-right: 0px !important;
-              margin-bottom: 0px !important;
-
-            }
-            li {
-              font-size: 18px !important;
-            }
-          }
 
           .nav-container {
             margin-top: auto;
@@ -56,6 +40,22 @@ export default function NavBar() {
 
           a:hover {
               color: #973494 
+          }
+          @media only screen and (max-width: 1400px) {
+            .nav-container {
+              display: none;
+            }
+          }
+
+          @media only screen and (max-width: 1670px) {
+            .nav-container {
+              margin-right: 0px;
+              margin-bottom: 0px;
+
+            }
+            li {
+              font-size: 18px;
+            }
           }
         `}</style>
       </div>
