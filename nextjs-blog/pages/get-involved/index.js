@@ -23,6 +23,12 @@ export default function GetInvolved() {
                 the identification, prevention, and treatment of TBI and concussion as a result of
                 the experience of domestic, intimate partner, and family violence.
             </div>
+            <div className="text">
+                Safe Living Space is a 501c3 tax exepct organization. Our EIN is: 86-3-54747
+            </div>
+            <div className="text">
+                Our Address is 548 Market Street PMB 98385 San Francisco, C 94104-5401
+            </div>
             <div className='button-wrapper'>
                 <a href='https://www.paypal.com/donate?hosted_button_id=X7CELSBLXK9VQ' className='paypal'>
                     Paypal
