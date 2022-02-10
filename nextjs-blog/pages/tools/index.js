@@ -25,7 +25,7 @@ export default function Tools() {
                     <br></br>
                     Please note, this tool is intended to educate individuals and help them assess their risk of experiencing a concussion. This tool does not diagnose concussion.
                 </div>
-                <a className="download-here" href="https://s3.us-west-1.amazonaws.com/safelivingspace.org/Documents/Concussion+Screening+Self-Assessment+Tool-090921.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                <a className="download-here" href="https://s3.us-west-1.amazonaws.com/safelivingspace.org/Documents/Concussion_Screening_Self-Assessment_Tool_1_24_22_One_Line_fillable/form.html" target="_blank" rel="noopener noreferrer">View Tool</a>
                 <div className="title-text">
                     First Responders Concussion Screening Tool
                 </div>
