@@ -47,6 +47,34 @@ export default function Tools() {
                     Return To Sports Guidelines
                 </div>
                 <a className="download-here" href="https://s3.us-west-1.amazonaws.com/safelivingspace.org/Documents/return-to-play-guide.pdf" target="_blank" rel="noopener noreferrer">View Tool</a> */}
+               
+               <div className="title-text">
+                    10 Questions to Ask Your Provider About Concussion/TBI
+                </div>
+                <div className="description-text">
+                    This tool was designed to assist clients with asking their medical providers questions based on their concussion/TBI symptoms and potential treatment options.
+                    <br></br>
+                    <br></br>
+                    We encourage you to print the tool, earmark what seems most pertinent to your symptoms and recovery stage, and share it with your medical provider at your next appointment.
+                </div>
+                <a className="download-here" href="https://s3.us-west-1.amazonaws.com/safelivingspace.org/Documents/10+Questions+to+Ask+Your+Provider+About+Concussion+%26+TBI.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                
+                <div className="title-text">
+                    The Facts: Concussion/TBI in Domestic and Intimate Partner Violence
+                </div>
+                <div className="description-text">
+                    This document summarizes current knowledge about concussion and TBI in the context of domestic and intimate partner violence, including prevalence estimates, affected groups, and the impact of COVID-19 on this issue.
+                </div>
+                <a className="download-here" href="https://s3.us-west-1.amazonaws.com/safelivingspace.org/Documents/Concussion+Screening+in+DV+%26+IPV.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                
+                <div className="title-text">
+                    Current Research on Concussion and TBI
+                </div>
+                <div className="description-text">
+                Here you will find the latest data from the CDC and prominent researchers on concussion/TBI in domestic and intimate partner violence.
+                </div>
+                <a className="download-here" href="https://s3.us-west-1.amazonaws.com/safelivingspace.org/Documents/Concussion+Screening+in+DV+%26+IPV.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                
                 <div className="boxed-content">
                     Please feel free to use these documents and modify them to your liking.
                     If you choose to modify them, please send a copy of your revisions to edie@safelivingspace.org, so we can feature your work and add to our collective

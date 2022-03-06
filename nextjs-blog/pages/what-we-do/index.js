@@ -18,13 +18,13 @@ export default function WhoWeAre() {
             <a className="sub-title" href="http://safelivingspace.org/tools">Concussion Screening Tools</a>
             <div className="text">
                 The concussion experts at Safe Living Space recognized that no concussion screening tools existed for quickly assessing the status of individuals experiencing domestic/intimate
-                partner/family violence. They also recognized that many injured individuals are unable to access medical care due to both COVID-19 and the intimating/controlling nature of partner and family violence.     
+                partner/family violence. They also recognized that many injured individuals are unable to access medical care due to both COVID-19 and the intimidating/controlling nature of partner and family violence.     
             </div>
             <div className="text">
                 <div className="bold-text">In response, the team developed two novel screening tools:</div>
                 <div className="bold-text">1. The first responder screening tool</div> based on current standards for screening sports concussions, such as MMA and football. 
                 <div className="bold-text">2. The self-screening tool</div> for individuals. 
-                The team also developed guidance for managing an individual’s return to sport following a concussion, which may serve as a guide for evaluating the appropriate point in time for an individual’s return to the social environment in which injuries occurred.
+                The team also developed a tool that individuals can use on their own to assess their risk of concussion following an injury to the head or neck. Please note, this tool is not designed to diagnose, but rather to assess relative concussion risk. Individuals are encouraged to share their results with a medical provider for proper diagnosis and treatment.
                 <br></br>
                 <br></br>
                 <div className="sub-title">Concussion Research in DV/IPV/FV</div>
