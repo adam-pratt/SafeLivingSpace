@@ -100,7 +100,7 @@ export default function WorkSection() {
                     word-spacing: 2px;
                     color: black;
                     letter-spacing: 1px;
-                    font-size: 28px;
+                    font-size: 24px;
                     margin: 0 1% 0 1%;
                 }
                 .work-header {
@@ -207,7 +207,7 @@ export default function WorkSection() {
                     word-spacing: 2px;
                     color: black;
                     letter-spacing: 1px;
-                    font-size: 28px;
+                    font-size: 24px;
                     margin: 0 1% 0 1%;
                 }
                 .work-header {

@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import WorkSection from '../components/WorkSection'
-import { getImageByName } from '../utils/imgLoader'
+import WorkSection from '../components/WorkSection';
+import News from '../components/News';
+import { getImageByName } from '../utils/imgLoader';
 
 export default function Home() {
   return (
@@ -13,9 +14,7 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
-        <img className="homepageImage" src={getImageByName('hands.png')}>
-
-        </img>
+        <img className="homepageImage" src={getImageByName('hands.png')}></img>
         <h3 className="mission-title">Mission</h3>
         <p className="mission-text">Safe Living Space is dedicated to creating a world where everyone is safe where they live.
         <br></br>
@@ -24,7 +23,9 @@ export default function Home() {
             and research to identify, prevent, and treat traumatic brain injury and concussion secondary to the experience of 
             domestic, intimate partner, and family violence.
         </p>
+        
         {WorkSection()}
+        {News()}
         <div className='join-us-container'>
           <div className='join-us-words-container'>
             <h1 className='join-us-title'>Join Us</h1>
@@ -48,9 +49,9 @@ export default function Home() {
       <style jsx>{`
         .homepageImage {
           display: block;
-          max-width:100%;
-          width: auto;
-          height: auto;
+          width:100%;
+          height: 360px;
+          object-fit: cover;
         }
 
        
@@ -96,7 +97,7 @@ export default function Home() {
           display: flex;
           justify-content: center;
           text-align: center;
-          font-size: 28px;
+          font-size: 24px;
         }
         .slsLogo {
           height: 10px;

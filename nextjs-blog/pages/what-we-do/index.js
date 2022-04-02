@@ -73,7 +73,7 @@ export default function WhoWeAre() {
                     display: flex;
                     justify-content: center;
                     text-align: center;
-                    font-size: 28px;
+                    font-size: 24px;
                     margin-bottom: 24px;
                     margin-top: 24px;
                 }
