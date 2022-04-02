@@ -3,11 +3,11 @@ export default function NavBar() {
     return(
       <div className='nav-container'>
         <ul>
-          <li><a href="http://safelivingspace.org/who-we-are">WHO WE ARE</a></li>
-          <li><a href="http://safelivingspace.org/what-we-do">WHAT WE DO</a></li>
-          <li><a href="http://safelivingspace.org/tools">RESOURCES</a></li>
-          <li><a href="http://safelivingspace.org/get-involved">GET INVOLVED</a></li>
-          <li><a href="http://safelivingspace.org/contact-us">CONTACT US</a></li>
+          <li><a href="https://safelivingspace.org/who-we-are">WHO WE ARE</a></li>
+          <li><a href="https://safelivingspace.org/what-we-do">WHAT WE DO</a></li>
+          <li><a href="https://safelivingspace.org/tools">RESOURCES</a></li>
+          <li><a href="https://safelivingspace.org/get-involved">GET INVOLVED</a></li>
+          <li><a href="https://safelivingspace.org/contact-us">CONTACT US</a></li>
         </ul>
         <style jsx>{`
 

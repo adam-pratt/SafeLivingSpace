@@ -15,7 +15,7 @@ export default function WhoWeAre() {
             </Head>
             <div className="banner-wrapper"><Banner/></div>
             {PageTitle(pageTitle)}
-            <a className="sub-title" href="http://safelivingspace.org/tools">Concussion Screening Tools</a>
+            <a className="sub-title" href="https://safelivingspace.org/tools">Concussion Screening Tools</a>
             <div className="text">
                 The concussion experts at Safe Living Space recognized that no concussion screening tools existed for quickly assessing the status of individuals experiencing domestic/intimate
                 partner/family violence. They also recognized that many injured individuals are unable to access medical care due to both COVID-19 and the intimidating/controlling nature of partner and family violence.     

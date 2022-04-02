@@ -7,7 +7,7 @@ function Banner() {
     return(
       <div>
         <div className="banner">
-            <a className='banner-logo' href='http://safelivingspace.org/'>
+            <a className='banner-logo' href='https://safelivingspace.org/'>
               <img width="40px" height="40px" src={getImageByName('SlsLogo.jpg')}></img>
               <h1 className='banner-text'> Safe Living Space</h1>
             </a>
