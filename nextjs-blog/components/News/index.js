@@ -15,7 +15,7 @@ export default function News() {
                         Learn more in this week’s edition of <a className="link" href="https://www.nytimes.com/2022/03/01/magazine/brain-trauma-domestic-violence.html?referringSource=articleShare">New York Times.</a>
                     </div>
                     <div className="news-text-2">
-                        <a className="link" href="http://safelivingspace.org/tools">(Also see Resources)</a>
+                        <a className="link" href="https://safelivingspace.org/tools">(Also see Resources)</a>
                     </div>
                     
                 </div>

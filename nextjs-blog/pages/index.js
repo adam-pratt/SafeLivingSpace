@@ -3,6 +3,9 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import WorkSection from '../components/WorkSection';
 import News from '../components/News';
+import WomenMakingHistoryAwardBanner from '../components/WomenMakingHistoryAwardBanner';
+import DocImageSection from '../components/DocImgSection';
+import MeetTheAwardees from '../components/MeetTheAwardees';
 import { getImageByName } from '../utils/imgLoader';
 
 export default function Home() {
@@ -14,8 +17,11 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
-        <img className="homepageImage" src={getImageByName('hands.png')}></img>
-        <h3 className="mission-title">Mission</h3>
+        <div className="thinGreyLine"></div>
+        {DocImageSection()}
+        {WomenMakingHistoryAwardBanner()}
+        {MeetTheAwardees()}
+        {/* <h3 className="mission-title">Mission</h3>
         <p className="mission-text">Safe Living Space is dedicated to creating a world where everyone is safe where they live.
         <br></br>
         <br></br>
@@ -40,21 +46,21 @@ export default function Home() {
             </p>
           </div>
           <img width="50%" height="40%" src={getImageByName('hand-img.png')}></img>
-        </div>
+        </div> */}
       </main>
       <footer>
         {Footer()}
       </footer>
 
       <style jsx>{`
-        .homepageImage {
-          display: block;
-          width:100%;
-          height: 360px;
-          object-fit: cover;
-        }
 
-       
+        .thinGreyLine {
+          margin-top: 10px;
+          width: 100%;
+          background-color: #E5E3DD;
+          height: 1px;
+        }        
+
         .banner-wrapper {
           width: 100%;
           padding: 10px 0 10px 0;
