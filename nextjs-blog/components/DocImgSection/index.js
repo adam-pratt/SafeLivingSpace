@@ -23,10 +23,11 @@ const DocImageSection = () => {
         .docImageContainer {
           justify-content: center;
           text-align: center;
+          width: 300px;
         }
 
         .docImageHeaderSection {
-          padding-top: 50px;
+          padding: 50px;
           display: flex;
           flex-direction: row;
           align-items: center;

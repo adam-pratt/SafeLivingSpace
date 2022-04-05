@@ -146,7 +146,9 @@ export default function HambergerMenu() {
                     padding: 50px;
                     padding-top: 125px;
                     right: -60px;
-                    background: #ededed;
+                    background: white;
+                    border: solid;
+                    border-color: #370F7A; 
                     list-style-type: none;
                     -webkit-font-smoothing: antialiased;
                     /* to stop flickering of text in safari */

@@ -16,7 +16,7 @@ const WomenMakingHistoryAwardBanner = () => {
                 }
                 .make-history-text {
                     color: #36107A;
-                    font-size: 50px;
+                    font-size: 45px;
                     text-align: center;
                     padding-top: 20px;
                     font-style: italic;
@@ -33,7 +33,36 @@ const WomenMakingHistoryAwardBanner = () => {
                     background-color: #F5EFFC;
                     height: 400px;
                     border-style: solid;
-                    margin-top: 50px;
+                }
+                @media only screen and (max-width: 1400px) {
+                    .make-history-title { 
+                        font-size: 60px;
+                    }
+                    .make-history-text {
+                        font-size: 40px;
+                    }
+                }
+                @media only screen and (max-width: 1000px) {
+                    .make-history-title { 
+                        font-size: 40px;
+                    }
+                    .make-history-text {
+                        font-size: 30px;
+                    }
+                    .make-history-container {
+                        height: 300px;
+                    }
+                }
+                @media only screen and (max-width: 700px) {
+                    .make-history-title { 
+                        font-size: 30px;
+                    }
+                    .make-history-text {
+                        font-size: 20px;
+                    }
+                    .make-history-container {
+                        height: 250px;
+                    }
                 }
             `}</style>
         </div>

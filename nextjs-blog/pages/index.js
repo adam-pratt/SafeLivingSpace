@@ -17,8 +17,10 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
-        <div className="thinGreyLine"></div>
-        {DocImageSection()}
+        <div className="homepageDesktop">
+          <div className="thinGreyLine"></div>
+          {DocImageSection()}
+        </div>
         {WomenMakingHistoryAwardBanner()}
         {MeetTheAwardees()}
         {/* <h3 className="mission-title">Mission</h3>
@@ -53,7 +55,11 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-
+        @media only screen and (max-width: 1400px) {
+          .homepageDesktop { 
+              display: none !important
+          }
+        }
         .thinGreyLine {
           margin-top: 10px;
           width: 100%;
