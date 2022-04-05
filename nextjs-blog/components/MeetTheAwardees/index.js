@@ -215,6 +215,7 @@ const MeetTheAwardees = () => {
                     margin-left: 30px;
                     margin-right: 120px;
                     margin-bottom: 30px;
+                    word-spacing: 10px;
                 }
                 .meet-the-awardees-container-mobile {
                     display: none;

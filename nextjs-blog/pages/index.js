@@ -23,7 +23,8 @@ export default function Home() {
         </div>
         {WomenMakingHistoryAwardBanner()}
         {MeetTheAwardees()}
-        {/* <h3 className="mission-title">Mission</h3>
+        <div className="thinGreyLine"></div>
+        <h3 className="mission-title">Mission</h3>
         <p className="mission-text">Safe Living Space is dedicated to creating a world where everyone is safe where they live.
         <br></br>
         <br></br>
@@ -48,7 +49,7 @@ export default function Home() {
             </p>
           </div>
           <img width="50%" height="40%" src={getImageByName('hand-img.png')}></img>
-        </div> */}
+        </div>
       </main>
       <footer>
         {Footer()}
@@ -61,7 +62,6 @@ export default function Home() {
           }
         }
         .thinGreyLine {
-          margin-top: 10px;
           width: 100%;
           background-color: #E5E3DD;
           height: 1px;
@@ -98,6 +98,7 @@ export default function Home() {
           color: #370F7A;
           font-size: 50px;
           margin-bottom: 0px;
+          margin-top: 10px;
         }
      
         .mission-text {

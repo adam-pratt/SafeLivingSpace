@@ -25,14 +25,14 @@ export default function Tools() {
                     <br></br>
                     Please note, this tool is intended to educate individuals and help them assess their risk of experiencing a concussion. This tool does not diagnose concussion.
                 </div>
-                <a className="download-here" href="safelivingspace.org/Documents/Concussion_Screening_Self-Assessment_Tool_1_24_22_One_Line_fillable/form.html" target="_blank" rel="noopener noreferrer">View Tool</a>
+                <a className="download-here" href="Documents/Concussion_Screening_Self-Assessment_Tool_1_24_22_One_Line_fillable/form.html" target="_blank" rel="noopener noreferrer">View Tool</a>
                 <div className="title-text">
                     First Responders Concussion Screening Tool
                 </div>
                 <div className="description-text">
                     This tool is intended to be used by first responders to screen individuals for concussion. This tool does not diagnose concussion.
                 </div>
-                <a className="download-here" href="safelivingspace.org/Documents/First+Responder+Screening+Tool.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                <a className="download-here" href="Documents/First+Responder+Screening+Tool.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
                 <div className="title-text">
                     Sports Concussion Screening
                 </div>
@@ -42,7 +42,7 @@ export default function Tools() {
                     <br></br>
                     Safe Living Space’s DV/IPV/FV concussion screening tools were modeled after these guidelines.
                 </div>
-                <a className="download-here" href="safelivingspace.org/Documents/sports-concussion-screening-tools.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                <a className="download-here" href="Documents/sports-concussion-screening-tools.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
                 {/* <div className="title-text">
                     Return To Sports Guidelines
                 </div>
@@ -57,7 +57,7 @@ export default function Tools() {
                     <br></br>
                     We encourage you to print the tool, earmark what seems most pertinent to your symptoms and recovery stage, and share it with your medical provider at your next appointment.
                 </div>
-                <a className="download-here" href="safelivingspace.org/Documents/10+Questions+to+Ask+Your+Provider+About+Concussion+%26+TBI.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                <a className="download-here" href="Documents/10+Questions+to+Ask+Your+Provider+About+Concussion+%26+TBI.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
                 
                 <div className="title-text">
                     The Facts: Concussion/TBI in Domestic and Intimate Partner Violence
@@ -65,7 +65,7 @@ export default function Tools() {
                 <div className="description-text">
                     This document summarizes current knowledge about concussion and TBI in the context of domestic and intimate partner violence, including prevalence estimates, affected groups, and the impact of COVID-19 on this issue.
                 </div>
-                <a className="download-here" href="safelivingspace.org/Documents/Concussion+Screening+in+DV+%26+IPV.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                <a className="download-here" href="Documents/Concussion+Screening+in+DV+%26+IPV.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
                 
                 <div className="title-text">
                     Current Research on Concussion and TBI
@@ -73,7 +73,7 @@ export default function Tools() {
                 <div className="description-text">
                 Here you will find the latest data from the CDC and prominent researchers on concussion/TBI in domestic and intimate partner violence.
                 </div>
-                <a className="download-here" href="safelivingspace.org/Documents/Concussion+Screening+in+DV+%26+IPV.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
+                <a className="download-here" href="Documents/Concussion+Screening+in+DV+%26+IPV.pdf" target="_blank" rel="noopener noreferrer">View Tool</a>
                 
                 <div className="boxed-content">
                     Please feel free to use these documents and modify them to your liking.

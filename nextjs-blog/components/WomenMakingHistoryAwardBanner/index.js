@@ -64,6 +64,11 @@ const WomenMakingHistoryAwardBanner = () => {
                         height: 250px;
                     }
                 }
+                @media only screen and (max-width: 470px) {
+                    .make-history-title {
+                        padding-top: 5px;
+                    }
+                }
             `}</style>
         </div>
     )
