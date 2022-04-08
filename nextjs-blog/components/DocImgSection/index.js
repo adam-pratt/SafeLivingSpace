@@ -6,11 +6,13 @@ const DocImageSection = () => {
       <div className="docImageContainer">
         <img className="docImage" src={getImageByName("Valera+headshot.png")}></img>
         <div className="docImageText"> Eve Valera, PhD</div>
+        <div className="awardWinnerText"> Award Winner</div>
       </div>
       <img className="homepageImage" src={getImageByName('hands.png')}></img>
       <div className="docImageContainer">
         <img className="docImage" src={getImageByName("Snedaker+headshot.jpeg")}></img>
-        <div className="docImageText"> Katherine Snedaker, LCWS</div>
+        <div className="docImageText"> Katherine Snedaker, LCSW</div>
+        <div className="awardWinnerText"> Award Winner</div>
       </div>
       <style jsx>{`
         .homepageImage {
@@ -23,7 +25,7 @@ const DocImageSection = () => {
         .docImageContainer {
           justify-content: center;
           text-align: center;
-          width: 300px;
+          width: 385px;
         }
 
         .docImageHeaderSection {
@@ -46,6 +48,16 @@ const DocImageSection = () => {
           word-spacing: 1px;
           letter-spacing: 0.5px;
           font-size: 30px;
+          paddint-top: 15px;
+          color: #36107A;
+        }
+
+        .awardWinnerText{
+          padding-top: 10px;
+          font-weight: 290;
+          word-spacing: 1px;
+          letter-spacing: 0.5px;
+          font-size: 25px;
           paddint-top: 15px;
           color: #36107A;
         }
