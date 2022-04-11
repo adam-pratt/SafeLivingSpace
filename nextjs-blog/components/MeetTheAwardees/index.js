@@ -42,7 +42,7 @@ const MeetTheAwardees = () => {
                     </div>
                     <div className="docImageContainer">
                         <img className="docImage" src={getImageByName("Snedaker+headshot.jpeg")}></img>
-                        <div className="docImageText"> Katherine Snedaker, LCWS </div>
+                        <div className="docImageText"> Katherine Snedaker, LCSW </div>
                         <div className="docImageSubText"> CEO And Founder, PINK Concussions </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const MeetTheAwardees = () => {
                 <div className="doc-section-mobile">
                     <div className="docImageContainerMobile">
                         <img className="docImage" src={getImageByName("Snedaker+headshot.jpeg")}></img>
-                        <div className="docImageText"> Katherine Snedaker, LCWS </div>
+                        <div className="docImageText"> Katherine Snedaker, LCSW </div>
                         <div className="docImageSubText"> CEO And Founder, PINK Concussions </div>
                     </div>
                     <div className="line-wrapper-right">
