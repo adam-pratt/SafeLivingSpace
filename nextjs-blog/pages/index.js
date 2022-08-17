@@ -3,9 +3,6 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import WorkSection from '../components/WorkSection';
 import News from '../components/News';
-import WomenMakingHistoryAwardBanner from '../components/WomenMakingHistoryAwardBanner';
-import DocImageSection from '../components/DocImgSection';
-import MeetTheAwardees from '../components/MeetTheAwardees';
 import { getImageByName } from '../utils/imgLoader';
 
 export default function Home() {

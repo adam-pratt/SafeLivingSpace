@@ -3,6 +3,9 @@ import Head from 'next/head'
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import PageTitle from '../../components/PageTitle';
+import WomenMakingHistoryAwardBanner from '../../components/WomenMakingHistoryAwardBanner';
+import DocImageSection from '../../components/DocImgSection';
+import MeetTheAwardees from '../../components/MeetTheAwardees';
 
 export default function WhoWeAre() {
     //TODO: ADD VID
@@ -31,10 +34,26 @@ export default function WhoWeAre() {
                 In partnership with WEAVE, NorthBay, ThinkFirst, Stanford, and many others, Dr. Zusman and team are advancing concussion research, including assessment of concussion and whiplash in individuals with certain types of migraine headaches, Chronic Pain Syndromes, Fibromyalgia, and Alzheimer’s
             </div>
             <iframe className='youtube-container'  src="https://www.youtube.com/embed/WdxYw2itR0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="homepageDesktop">
+                <div className="thinGreyLine"></div>
+                {DocImageSection()}
+            </div>
+            {WomenMakingHistoryAwardBanner()}
+            {MeetTheAwardees()}
             <footer>
                 {Footer()}
             </footer>
             <style jsx> {`
+                @media only screen and (max-width: 1400px) {
+                    .homepageDesktop { 
+                        display: none !important
+                    }
+                }
+                .thinGreyLine {
+                    width: 100%;
+                    background-color: #E5E3DD;
+                    height: 1px;
+                }  
                 .youtube-container {
                     width: 1200px;
                     height: 600px;
