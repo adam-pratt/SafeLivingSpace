@@ -44,7 +44,7 @@ export default function ContactUs() {
 
                 .text {
                     width: 80%;
-                    font-weight: 190;
+                    font-weight: 390;
                     word-spacing: 2px;
                     color: #222222;
                     letter-spacing: 1px;

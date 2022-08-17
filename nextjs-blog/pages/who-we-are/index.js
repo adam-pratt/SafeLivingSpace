@@ -79,7 +79,7 @@ export default function WhoWeAre() {
             </footer>
             <style jsx> {`
                 .intro-text {
-                    font-weight: 190;
+                    font-weight: 390;
                     word-spacing: 2px;
                     color: #222222;
                     letter-spacing: 1px;
@@ -96,14 +96,15 @@ export default function WhoWeAre() {
                 }
 
                 .text {
-                    margin: 25px 0 0 0;
-                    font-weight: 190;
+                    font-weight: 390;
                     word-spacing: 2px;
                     color: #222222;
                     letter-spacing: 1px;
+                    font-size: 24px;
+                    margin: 25px 0 0 0;
+                    letter-spacing: 1px;
                     display: flex;
                     text-align: left;
-                    font-size: 24px;
                 }
 
                 .banner-spacer {

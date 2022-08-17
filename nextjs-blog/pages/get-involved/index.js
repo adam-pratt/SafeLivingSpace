@@ -150,16 +150,16 @@ export default function GetInvolved() {
                 }
 
                 .text {
-                    margin-bottom: 30px;
-                    width: 80%;
                     font-weight: 390;
                     word-spacing: 2px;
                     color: #222222;
                     letter-spacing: 1px;
+                    font-size: 24px;
                     display: flex;
                     justify-content: center;
                     text-align: center;
-                    font-size: 24px;
+                    margin-bottom: 30px;
+                    width: 80%;
                 }
 
                 footer {

@@ -17,12 +17,6 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
-        <div className="homepageDesktop">
-          <div className="thinGreyLine"></div>
-          {DocImageSection()}
-        </div>
-        {WomenMakingHistoryAwardBanner()}
-        {MeetTheAwardees()}
         <div className="thinGreyLine"></div>
         <h3 className="mission-title">Mission</h3>
         <p className="mission-text">Safe Living Space is dedicated to creating a world where everyone is safe where they live.
