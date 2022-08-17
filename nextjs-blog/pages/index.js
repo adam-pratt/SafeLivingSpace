@@ -3,6 +3,7 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import WorkSection from '../components/WorkSection';
 import News from '../components/News';
+import DocImageSection from '../components/DocImgSection'
 import { getImageByName } from '../utils/imgLoader';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
+        <img className="homepageImage" src={getImageByName('hands.png')}></img>
         <div className="thinGreyLine"></div>
         <h3 className="mission-title">Mission</h3>
         <p className="mission-text">Safe Living Space is dedicated to creating a world where everyone is safe where they live.
@@ -47,9 +49,21 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        .homepageImage {
+          display: block;
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
         @media only screen and (max-width: 1400px) {
           .homepageDesktop { 
               display: none !important
+          }
+          .homepageImage {
+            display: block;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
           }
         }
         .thinGreyLine {
