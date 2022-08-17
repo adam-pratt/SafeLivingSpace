@@ -20,7 +20,7 @@ export default function WhoWeAre() {
                         together our expertise and experience in medicine, nursing,
                         emergency response, law, social work, public health, media, and more.
                         We are passionate about changing the landscape of screening, treatment,
-                        and prevention of concussion and traumatic brain injury secondary to the
+                        and prevention of concussion and brain injury secondary to the
                         experience of domestic, partner, intimate partner, and family violence.
                     </h3>
                     <h1 className="title">Board of Directors</h1>

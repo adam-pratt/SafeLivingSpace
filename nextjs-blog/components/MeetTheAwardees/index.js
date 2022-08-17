@@ -17,7 +17,7 @@ const MeetTheAwardees = () => {
                     <div className="meet-the-awardees-text-right"> 
                         Known for her groundbreaking research, Dr. Eve Valera, Associate Professor of Psychiatry 
                         at Harvard Medical School and Research Scientist at MGH, published one of the first studies 
-                        to investigate the prevalence and effects of traumatic brain injury (TBI) in women who had 
+                        to investigate the prevalence and effects of brain injury and concussion in women who had 
                         experienced intimate partner violence (IPV). Dr. Valera has authored more than 50 publications 
                         and most recently served as an editor of the first-ever issue of The Journal of Head Trauma Rehabilitation 
                         devoted entirely to IPV and brain injury in January 2022. Recently featured in NY Times Magazine, her 
@@ -61,7 +61,7 @@ const MeetTheAwardees = () => {
                     <div className="meet-the-awardees-text-right-mobile"> 
                         Known for her groundbreaking research, Dr. Eve Valera, Associate Professor of Psychiatry 
                         at Harvard Medical School and Research Scientist at MGH, published one of the first studies 
-                        to investigate the prevalence and effects of traumatic brain injury (TBI) in women who had 
+                        to investigate the prevalence and effects of  brain injury and concussion in women who had 
                         experienced intimate partner violence (IPV). Dr. Valera has authored more than 50 publications 
                         and most recently served as an editor of the first-ever issue of The Journal of Head Trauma Rehabilitation 
                         devoted entirely to IPV and brain injury in January 2022. Recently featured in NY Times Magazine, her 

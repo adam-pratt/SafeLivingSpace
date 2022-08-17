@@ -20,7 +20,7 @@ export default function Home() {
         <br></br>
         <br></br>
             We coordinate the expertise of healthcare, safety, and subject matter experts to integrate cutting-edge education 
-            and research to identify, prevent, and treat traumatic brain injury and concussion secondary to the experience of 
+            and research to identify, prevent, and treat brain injury and concussion secondary to the experience of 
             domestic, intimate partner, and family violence.
         </p>
         
@@ -93,7 +93,7 @@ export default function Home() {
         }
      
         .mission-text {
-          width: 80%;
+          width: 840px;
           font-weight: 390;
           word-spacing: 2px;
           color: #222222;

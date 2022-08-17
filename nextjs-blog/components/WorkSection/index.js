@@ -24,7 +24,7 @@ export default function WorkSection() {
                     <img className="work-icon-mobile" width="140px" height="120px" src={getImageByName('icon3.png')}></img>
                     <div className="work-text-mobile">We are a source of education for leaders and
                     policymakers on identifying, preventing, and treating concussion
-                    and traumatic brain injury as a result of domestic,
+                    and brain injury as a result of domestic,
                     intimate partner, and family violence</div>
                 </div>
             </div>
@@ -154,7 +154,7 @@ export default function WorkSection() {
                 experienced violence where they live</div>
                 <div className="work-text">We are a source of education for leaders and
                 policymakers on identifying, preventing, and treating concussion
-                and traumatic brain injury as a result of domestic,
+                and brain injury as a result of domestic,
                 intimate partner, and family violence</div>
                 </div>
             </div>
