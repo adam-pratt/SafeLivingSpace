@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import WorkSection from '../components/WorkSection';
-import News from '../components/News';
-import DocImageSection from '../components/DocImgSection'
+import CustomDonateButton from '../components/CustomDonateButton';
 import { getImageByName } from '../utils/imgLoader';
 
 export default function Home() {
@@ -15,33 +13,26 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
-        <img className="homepageImage" src={getImageByName('hands.png')}></img>
+        <img className="homepageImage" src={getImageByName('SLS_5K_Website_Banner.svg')}></img>
         <div className="thinGreyLine"></div>
-        <h3 className="mission-title">Mission</h3>
-        <p className="mission-text">Safe Living Space is dedicated to creating a world where everyone is safe where they live.
-        <br></br>
-        <br></br>
-            We coordinate the expertise of healthcare, safety, and subject matter experts to integrate cutting-edge education 
-            and research to identify, prevent, and treat brain injury and concussion secondary to the experience of 
-            domestic, intimate partner, and family violence.
+        <p className="mission-text">In honor of Domestic Violence Awareness Month, Safe Living Space is hosting a <b>5K - Your Way Fundraiser</b> for brain injury awareness and education.  Join us the weekend of October 29 - 30th for a 5K - Your Way!
+          <br></br>
+          <br></br>
+            All proceeds will support Safe Living Space, a 501c3 organization (EIN 86-3054747).
         </p>
-        
-        {WorkSection()}
-        {News()}
+        <div className='button-wrapper'/>
+        <CustomDonateButton name='Register - Free' link='https://reactjs.org/docs/forms.html'/>
+        <div className='button-wrapper'/>
+        <CustomDonateButton name='Register - Free' link='https://reactjs.org/docs/forms.html'/>
+        <div className='button-wrapper'/>
         <div className='join-us-container'>
+          <img width="50%" height="40%" src={getImageByName('Screen Shot 2022-10-11 at 11.02.03 PM.png')}></img>
           <div className='join-us-words-container'>
-            <h1 className='join-us-title'>Join Us</h1>
             <p className='join-us-text'>
-            We are looking for dedicated and passionate people
-            who want to make a difference by improving the detection,
-            treatment and prevention of domestic violence.
+            At registration, you will have the opportunity to order a shirt to support the SLS Brain Injury 5K. You can also order through the link  below!
             </p>
-            <p className='join-us-text'>
-            If you would like to help us achieve our mission or have other
-            inquiries with our team, please email us at <b>edie@safelivingspace.org</b>
-            </p>
+            <CustomDonateButton name='Register - Free' link='https://reactjs.org/docs/forms.html'/>
           </div>
-          <img width="50%" height="40%" src={getImageByName('hand-img.png')}></img>
         </div>
       </main>
       <footer>
@@ -56,9 +47,6 @@ export default function Home() {
           object-fit: cover;
         }
         @media only screen and (max-width: 1400px) {
-          .homepageDesktop { 
-              display: none !important
-          }
           .homepageImage {
             display: block;
             width: 100%;
@@ -71,13 +59,18 @@ export default function Home() {
           background-color: #E5E3DD;
           height: 1px;
         }        
-
+        .button-wrapper {
+          padding: 10px 0px 10px 0px;
+        }
         .banner-wrapper {
           width: 100%;
           padding: 10px 0 10px 0;
         }
         .join-us-words-container {
           margin: 0 4% 0 4%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
         }
         .join-us-text {
           font-weight: 390;
@@ -85,6 +78,7 @@ export default function Home() {
           letter-spacing: 1px;
           font-size: 24px;
           color: #333333;
+          text-align: center;
         }
         .join-us-container {
           margin: 0 0 0 2%;
@@ -92,6 +86,7 @@ export default function Home() {
           align-items: center;
           width: 92%;
           color: #333333;
+          padding: 30px 0 20px 0;
         }
         .join-us-title {
           color: #370F7A;
@@ -112,10 +107,10 @@ export default function Home() {
           word-spacing: 2px;
           color: #222222;
           letter-spacing: 1px;
-          display: flex;
           justify-content: center;
           text-align: center;
           font-size: 24px;
+          padding-top: 20px;
         }
         .slsLogo {
           height: 10px;
