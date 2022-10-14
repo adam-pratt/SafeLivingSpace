@@ -37,8 +37,8 @@ export default function Home() {
         <div className="focus-section">
           <div className="title-text"> THE FOCUS </div>
           <div className="mission-text">
-            This year, the SLS Brain Injury 5K - Your Way will be completed in support of brain injury awareness and education. According to recent statistics, up to 69 million people in the U.S. experience a new brain injury every year.
-            These injuries can have many causes, not limited to falls, motor vehicle accidents, sports, and domestic violence, and can range in severity from mild to major traumatic brain injuries (TBIs).
+            This year, the SLS Brain Injury 5K - Your Way will be completed in support of brain injury awareness and education. According to recent statistics, millions of people in the U.S. experience a new brain injury every year.
+            These injuries can have many causes, not limited to falls, motor vehicle accidents, sports, and domestic violence, and can range in severity from mild to severe brain injuries (TBIs).
             <br></br>
             <br></br>
             <br></br>
