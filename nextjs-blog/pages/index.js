@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
-        <img className="homepageImage" src={getImageByName('SLS_5K_Website_Banner.svg')}></img>
+        <img className="homepageImage" src={getImageByName('SLS5KWebsiteBanner.svg')}></img>
         <div className="thinGreyLine"></div>
         <p className="mission-text">In honor of Domestic Violence Awareness Month, Safe Living Space is hosting a <b>5K - Your Way Fundraiser</b> for brain injury awareness and education.  Join us the weekend of October 29 - 30th for a 5K - Your Way!
           <br></br>
@@ -26,12 +26,12 @@ export default function Home() {
         <CustomDonateButton name='Donate to 5K Fundraiser' link='https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ'/>
         <div className='button-wrapper'/>
         <div className='join-us-container'>
-          <img width="50%" height="50%" src={getImageByName('DrZusman.jpg')}></img>
+          <img className='shirt-img' src={getImageByName('Shirt back.png')}></img>
           <div className='join-us-words-container'>
             <p className='mission-text'>
             At registration, you will have the opportunity to order a shirt to support the SLS Brain Injury 5K. You can also order through the link  below!
             </p>
-            <CustomDonateButton name='Order T-shirt' link='https://reactjs.org/docs/forms.html'/>
+            <CustomDonateButton name='Order T-shirt - Coming Soon'/>
           </div>
         </div>
       </main>
@@ -45,6 +45,12 @@ export default function Home() {
           width: 100%;
           height: 100%;
           object-fit: contain;
+        }
+        .shirt-img {
+          width: 50%;
+          height: 50%;
+          max-width: 600px; 
+          max-height: 600px; 
         }
         @media only screen and (max-width: 900px) {
           .mission-text {
