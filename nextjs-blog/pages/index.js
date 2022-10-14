@@ -21,17 +21,17 @@ export default function Home() {
             All proceeds will support Safe Living Space, a 501c3 organization (EIN 86-3054747).
         </p>
         <div className='button-wrapper'/>
-        <CustomDonateButton name='Register - Free' link='https://reactjs.org/docs/forms.html'/>
+        <CustomDonateButton name='Register - Free' link=' https://docs.google.com/forms/d/e/1FAIpQLSefUR10ipF4gtxT1XMnixFGKx26raNA3b3oGacwabvkUP5rZQ/viewform?usp=sf_link'/>
         <div className='button-wrapper'/>
-        <CustomDonateButton name='Register - Free' link='https://reactjs.org/docs/forms.html'/>
+        <CustomDonateButton name='Donate to 5K Fundraiser' link='https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ'/>
         <div className='button-wrapper'/>
         <div className='join-us-container'>
-          <img width="50%" height="40%" src={getImageByName('Screen Shot 2022-10-11 at 11.02.03 PM.png')}></img>
+          <img width="50%" height="50%" src={getImageByName('DrZusman.jpg')}></img>
           <div className='join-us-words-container'>
-            <p className='join-us-text'>
+            <p className='mission-text'>
             At registration, you will have the opportunity to order a shirt to support the SLS Brain Injury 5K. You can also order through the link  below!
             </p>
-            <CustomDonateButton name='Register - Free' link='https://reactjs.org/docs/forms.html'/>
+            <CustomDonateButton name='Order T-shirt' link='https://reactjs.org/docs/forms.html'/>
           </div>
         </div>
       </main>
@@ -43,15 +43,12 @@ export default function Home() {
         .homepageImage {
           display: block;
           width: 100%;
-          height: 400px;
-          object-fit: cover;
+          height: 100%;
+          object-fit: contain;
         }
-        @media only screen and (max-width: 1400px) {
-          .homepageImage {
-            display: block;
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        @media only screen and (max-width: 900px) {
+          .mission-text {
+            font-size: 18px !important;
           }
         }
         .thinGreyLine {
@@ -81,7 +78,7 @@ export default function Home() {
           text-align: center;
         }
         .join-us-container {
-          margin: 0 0 0 2%;
+          margin: 0 0 0 0;
           display: flex;
           align-items: center;
           width: 92%;
@@ -102,7 +99,7 @@ export default function Home() {
         }
      
         .mission-text {
-          width: 840px;
+          width: 92%;
           font-weight: 390;
           word-spacing: 2px;
           color: #222222;
@@ -140,6 +137,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          width: 100%;
         }
 
         footer {
