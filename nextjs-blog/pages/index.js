@@ -34,12 +34,36 @@ export default function Home() {
             <CustomDonateButton name='Order T-shirt - Coming Soon'/>
           </div>
         </div>
+        <div className="focus-section">
+          <div className="title-text"> THE FOCUS </div>
+          <div className="mission-text">
+            This year, the SLS Brain Injury 5K - Your Way will be completed in support of brain injury awareness and education. According to recent statistics, up to 69 million people in the U.S. experience a new brain injury every year.
+            These injuries can have many causes, not limited to falls, motor vehicle accidents, sports, and domestic violence, and can range in severity from mild to major traumatic brain injuries (TBIs).
+            <br></br>
+            <br></br>
+            <br></br>
+            Our goal is to promote education and awareness about brain injury
+            so that more people have the tools to keep their brains safe! 
+          </div>
+        </div>
       </main>
       <footer>
         {Footer()}
       </footer>
 
       <style jsx>{`
+        .focus-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 80px;
+          margin-top: 80px;
+        }
+        .title-text {
+          color: #370F7A;
+          align-items: center;
+          font-size: 24px;
+        }
         .homepageImage {
           display: block;
           width: 100%;
@@ -55,6 +79,14 @@ export default function Home() {
         @media only screen and (max-width: 900px) {
           .mission-text {
             font-size: 18px !important;
+          }
+          .title-text {
+            align-items: center;
+            font-size: 18px;
+          }
+          .focus-section {
+            margin-bottom: 40px !important;
+            margin-top: 40px !important;
           }
         }
         .thinGreyLine {

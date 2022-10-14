@@ -5,7 +5,7 @@ export default function Footer() {
       <div>
         <div className="footer-container">
           <div className='socail-container'>
-            <a href="https://www.instagram.com/safelivingspace/?hl=en"><img height='40px' width='40px' src={getImageByName('linkedin-white.png')}></img></a>
+            <a href="https://www.linkedin.com/company/safe-living-space"><img height='40px' width='40px' src={getImageByName('linkedin-white.png')}></img></a>
             <a href="https://www.facebook.com/safelivingspace "><img height='40px' width='40px' src={getImageByName('facebook-white.png')}></img></a>
             <a href="https://www.instagram.com/safelivingspace/?hl=en"><img  height='40px' width='40px'src={getImageByName('insta-white.png')}></img></a>
           </div>
