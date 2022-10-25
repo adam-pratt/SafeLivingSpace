@@ -31,7 +31,7 @@ export default function Home() {
             <p className='mission-text'>
             At registration, you will have the opportunity to order a shirt to support the SLS Brain Injury 5K. You can also order through the link  below!
             </p>
-            <CustomDonateButton name='Order T-shirt - Coming Soon'/>
+            <CustomDonateButton name='Order T-shirt' link='https://slsbraininjury5k.itemorder.com/shop/sale/'/>
           </div>
         </div>
         <div className="focus-section">
