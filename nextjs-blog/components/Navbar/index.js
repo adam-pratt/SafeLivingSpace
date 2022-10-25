@@ -50,7 +50,6 @@ export default function NavBar() {
           @media only screen and (max-width: 1670px) {
             .nav-container {
               margin-right: 0px;
-              margin-bottom: 0px;
 
             }
             li {
