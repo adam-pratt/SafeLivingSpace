@@ -4,14 +4,14 @@ const DocImageSection = () => {
   return (
     <div className="docImageHeaderSection">
       <div className="docImageContainer">
-        <img className="docImage" src={getImageByName("Valera+headshot.png")}></img>
-        <div className="docImageText"> Eve Valera, PhD</div>
+        <img className="docImage" src={getImageByName("Ramirez+Headshot.jpg")}></img>
+        <div className="docImageText"> Rachel Ramirez, MA, MSW, LISW-S</div>
         <div className="awardWinnerText"> Award Winner</div>
       </div>
       <img className="homepageImage" src={getImageByName('hands.png')}></img>
       <div className="docImageContainer">
-        <img className="docImage" src={getImageByName("Snedaker+headshot.jpeg")}></img>
-        <div className="docImageText"> Katherine Snedaker, LCSW</div>
+        <img className="docImage" src={getImageByName("ISMMS_Headshot_V3.jpeg")}></img>
+        <div className="docImageText"> Carrie Esopenko, PHD</div>
         <div className="awardWinnerText"> Award Winner</div>
       </div>
       <style jsx>{`
@@ -60,6 +60,12 @@ const DocImageSection = () => {
           font-size: 25px;
           paddint-top: 15px;
           color: #36107A;
+        }
+
+        @media only screen and (max-width: 1200px) {
+          .docImageHeaderSection {
+            display: none;
+          }
         }
     `}</style>
     </div>   
