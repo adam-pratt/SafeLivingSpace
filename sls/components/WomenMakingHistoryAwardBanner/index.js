@@ -1,7 +1,7 @@
 const WomenMakingHistoryAwardBanner = () => {
     return(
         <div className="make-history-container">
-            <div className="make-history-title"> Women Making History Award 2022 </div>
+            <div className="make-history-title"> Women Making History Award 2023 </div>
             <div className="make-history-text"> Recognizing women making strides in fields related to concussion/TBI, domestic violence, and/or safety in the home</div>
             <style jsx>{`
                 .make-history-title {
@@ -19,7 +19,6 @@ const WomenMakingHistoryAwardBanner = () => {
                     font-size: 45px;
                     text-align: center;
                     padding-top: 20px;
-                    font-style: italic;
                     padding-left: 10%;
                     padding-right: 10%;
                 }

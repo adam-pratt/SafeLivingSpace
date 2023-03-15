@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import CustomDonateButton from '../components/CustomDonateButton';
-import { getImageByName } from '../utils/imgLoader';
+import WomenMakingHistoryAwardBanner from '../components/WomenMakingHistoryAwardBanner';
+import DocImageSection from '../components/DocImgSection';
+import MeetTheAwardees from '../components/MeetTheAwardees';
 
 export default function Home() {
   return (
@@ -13,39 +14,10 @@ export default function Home() {
       </Head>
       <div className="banner-wrapper"><Banner/></div>
       <main>
-        <img className="homepageImage" src={getImageByName('SLS5KWebsiteBanner.svg')}></img>
         <div className="thinGreyLine"></div>
-        <p className="mission-text">In honor of Domestic Violence Awareness Month, Safe Living Space is hosting a <b>5K - Your Way Fundraiser</b> for brain injury awareness and education.  Join us the weekend of October 29 - 30th for a 5K - Your Way!
-          <br></br>
-          <br></br>
-            All proceeds will support Safe Living Space, a 501c3 organization (EIN 86-3054747).
-        </p>
-        <div className='button-wrapper'/>
-        <CustomDonateButton name='Register - Free' link=' https://docs.google.com/forms/d/e/1FAIpQLSefUR10ipF4gtxT1XMnixFGKx26raNA3b3oGacwabvkUP5rZQ/viewform?usp=sf_link'/>
-        <div className='button-wrapper'/>
-        <CustomDonateButton name='Donate to 5K Fundraiser' link='https://www.paypal.com/donate/?hosted_button_id=X7CELSBLXK9VQ'/>
-        <div className='button-wrapper'/>
-        <div className='join-us-container'>
-          <img className='shirt-img' src={getImageByName('Shirt back.png')}></img>
-          <div className='join-us-words-container'>
-            <p className='mission-text'>
-            At registration, you will have the opportunity to order a shirt to support the SLS Brain Injury 5K. You can also order through the link  below!
-            </p>
-            <CustomDonateButton name='Order T-shirt' link='https://slsbraininjury5k.itemorder.com/shop/sale/'/>
-          </div>
-        </div>
-        <div className="focus-section">
-          <div className="title-text"> THE FOCUS </div>
-          <div className="mission-text">
-            This year, the SLS Brain Injury 5K - Your Way will be completed in support of brain injury awareness and education. According to recent statistics, millions of people in the U.S. experience a new brain injury every year.
-            These injuries can have many causes, not limited to falls, motor vehicle accidents, sports, and domestic violence, and can range in severity from mild to severe brain injuries (TBIs).
-            <br></br>
-            <br></br>
-            <br></br>
-            Our goal is to promote education and awareness about brain injury
-            so that more people have the tools to keep their brains safe! 
-          </div>
-        </div>
+        {DocImageSection()}
+        {WomenMakingHistoryAwardBanner()}
+        {MeetTheAwardees()}
       </main>
       <footer>
         {Footer()}
