@@ -4,14 +4,14 @@ const DocImageSection = () => {
   return (
     <div className="docImageHeaderSection">
       <div className="docImageContainer">
-        <img className="docImage" src={getImageByName("Valera+headshot.png")}></img>
-        <div className="docImageText"> Rachel Ramirez, MA, MSW, LISW-S</div>
+        <img className="docImage" src={getImageByName("Ramirez+Headshot.jpg")}></img>
+        <div className="docImageText"> Rachel Ramirez,LISW-S, RS</div>
         <div className="awardWinnerText"> Award Winner</div>
       </div>
       <img className="homepageImage" src={getImageByName('hands.png')}></img>
       <div className="docImageContainer">
-        <img className="docImage" src={getImageByName("Snedaker+headshot.jpeg")}></img>
-        <div className="docImageText"> Carrie Esopenko, PHD</div>
+        <img className="docImage" src={getImageByName("ISMMS_Headshot_V3.jpeg")}></img>
+        <div className="docImageText"> Carrie Esopenko, PhD</div>
         <div className="awardWinnerText"> Award Winner</div>
       </div>
       <style jsx>{`

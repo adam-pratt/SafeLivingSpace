@@ -11,7 +11,7 @@ const MeetTheAwardees = () => {
                 <div className="doc-section">
                     <div className="docImageContainer">
                         <img className="docImage" src={getImageByName("Ramirez+Headshot.jpg")}></img>
-                        <div className="docImageText"> Rachel Ramirez, MA, MSW, LISW-S </div>
+                        <div className="docImageText"> Rachel Ramirez, LISW-S, RA </div>
                         <div className="docImageSubText"> Founder and Director, The Center of Partner-Inficted Brain Injury </div>
                     </div>
                     <div className="meet-the-awardees-text-right"> 
@@ -37,7 +37,7 @@ const MeetTheAwardees = () => {
                     </div>
                     <div className="docImageContainer">
                         <img className="docImage" src={getImageByName("ISMMS_Headshot_V3.jpeg")}></img>
-                        <div className="docImageText"> Carrie Esopenko, PHD </div>
+                        <div className="docImageText"> Carrie Esopenko, PhD </div>
                         <div className="docImageSubText"> Lead Investigator, ENIGMA IPV Working Group </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const MeetTheAwardees = () => {
                 <div className="doc-section-mobile">
                     <div className="docImageContainerMobile">
                         <img className="docImage" src={getImageByName("Ramirez+Headshot.jpg")}></img>
-                        <div className="docImageText"> Rachel Ramirez, MA, MSW, LISW-S </div>
+                        <div className="docImageText"> Rachel Ramirez, LISW-S, RA </div>
                         <div className="docImageSubText"> Founder and Director, The Center of Partner-Inficted Brain Injury </div>
                     </div>
                     <div className="line-wrapper-left">
@@ -65,7 +65,7 @@ const MeetTheAwardees = () => {
                 <div className="doc-section-mobile">
                     <div className="docImageContainerMobile">
                         <img className="docImage" src={getImageByName("ISMMS_Headshot_V3.jpeg")}></img>
-                        <div className="docImageText"> Carrie Esopenko, PHD </div>
+                        <div className="docImageText"> Carrie Esopenko, PhD </div>
                         <div className="docImageSubText"> Lead Investigator, ENIGMA IPV Working Group </div>
                     </div>
                     <div className="line-wrapper-right">
